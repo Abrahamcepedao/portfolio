@@ -5,6 +5,7 @@ import SchoolIcon from "@material-ui/icons/School";
 import DesktopMacIcon from "@material-ui/icons/DesktopMac";
 import CodeIcon from "@material-ui/icons/Code";
 import ContactMailIcon from "@material-ui/icons/ContactMail";
+import { HashLink } from "react-router-hash-link";
 
 const useStyles = makeStyles((theme) => ({
   menu: {
@@ -37,26 +38,61 @@ function Menu({ classes }) {
   return (
     <div className={classes.menu}>
       <div className={classes.menuContainer}>
-        <div className={classes.menuItem}>
-          <HomeIcon />
-          <p>Home</p>
-        </div>
-        <div className={classes.menuItem}>
-          <SchoolIcon />
-          <p>Home</p>
-        </div>
-        <div className={classes.menuItem}>
-          <DesktopMacIcon />
-          <p>Home</p>
-        </div>
-        <div className={classes.menuItem}>
-          <CodeIcon />
-          <p>Home</p>
-        </div>
-        <div className={classes.menuItem}>
-          <ContactMailIcon />
-          <p>Home</p>
-        </div>
+        <HashLink
+          activeClass="active"
+          to="/#home"
+          smooth
+          className={classes.navLinks}
+        >
+          <div className={classes.menuItem}>
+            <HomeIcon />
+            <p>Home</p>
+          </div>
+        </HashLink>
+        <HashLink
+          activeClass="active"
+          to="/#education"
+          smooth
+          className={classes.navLinks}
+        >
+          <div className={classes.menuItem}>
+            <SchoolIcon />
+            <p>Education</p>
+          </div>
+        </HashLink>
+        <HashLink
+          activeClass="active"
+          to="/#projects"
+          smooth
+          className={classes.navLinks}
+        >
+          <div className={classes.menuItem}>
+            <DesktopMacIcon />
+            <p>Projects</p>
+          </div>
+        </HashLink>
+        <HashLink
+          activeClass="active"
+          to="/#skills"
+          smooth
+          className={classes.navLinks}
+        >
+          <div className={classes.menuItem}>
+            <CodeIcon />
+            <p>Skills</p>
+          </div>
+        </HashLink>
+        <HashLink
+          activeClass="active"
+          to="/#contact"
+          smooth
+          className={classes.navLinks}
+        >
+          <div className={classes.menuItem}>
+            <ContactMailIcon />
+            <p>Contact</p>
+          </div>
+        </HashLink>
       </div>
     </div>
   );

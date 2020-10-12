@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import GitHubIcon from "@material-ui/icons/GitHub";
@@ -64,38 +64,44 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function Landing({classes}) {
-    classes = useStyles();
-    return (
-      <div className={classes.landingContainer} id={"home"}>
-        <div className={classes.topContainer}>
-          <img
-            src="./img/Home/Landing/logo.png"
-            alt="AC"
-            className={classes.logo}
+function Contact({ classes }) {
+  classes = useStyles();
+  return (
+    <div className={classes.landingContainer} id={"contact"}>
+      <div className={classes.topContainer}>
+        <img
+          src="./img/Home/Landing/logo.png"
+          alt="AC"
+          className={classes.logo}
+        />
+        <div className={classes.socialIcons}>
+          <InstagramIcon
+            style={{ margin: "10px", color: "#010400", fontSize: "25px" }}
           />
-          <div className={classes.socialIcons}>
-            <InstagramIcon style={{ margin: "10px", color: "#010400", fontSize: "25px" }} />
-            <GitHubIcon style={{ margin: "10px", color: "#010400", fontSize: "25px" }} />
-            <LinkedInIcon style={{ margin: "10px", color: "#010400", fontSize: "25px" }} />
-          </div>
-          <button className={classes.darkButton}>Dark Mode</button>
-        </div>
-        <div className={classes.infoContainer}>
-          <img
-            src="./img/Home/Landing/avatar.png"
-            alt="AV"
-            className={classes.avatar}
+          <GitHubIcon
+            style={{ margin: "10px", color: "#010400", fontSize: "25px" }}
           />
-          <div></div>
-          <h1 className={classes.title}>I am Abraham Cepeda</h1>
-          <h3 className={classes.text}>
-            I am a 20 year old computer programmer studying computer science at
-            Tecnológico de Monterrey while developing my technological skills.
-          </h3>
+          <LinkedInIcon
+            style={{ margin: "10px", color: "#010400", fontSize: "25px" }}
+          />
         </div>
+        <button className={classes.darkButton}>Dark Mode</button>
       </div>
-    );
+      <div className={classes.infoContainer}>
+        <img
+          src="./img/Home/Landing/avatar.png"
+          alt="AV"
+          className={classes.avatar}
+        />
+        <div></div>
+        <h1 className={classes.title}>I am Abraham Cepeda</h1>
+        <h3 className={classes.text}>
+          I am a 20 year old computer programmer studying computer science at
+          Tecnológico de Monterrey while developing my technological skills.
+        </h3>
+      </div>
+    </div>
+  );
 }
 
-export default Landing;
+export default Contact;
