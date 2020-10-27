@@ -12,7 +12,7 @@ function index() {
         <>
            <Landing/>
            <Menu/>
-           <About/>
+           {/* <About/> */}
            <Education/>
            <Projects/>
            <Skills/>

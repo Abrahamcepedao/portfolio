@@ -88,17 +88,7 @@ function Skills({ classes }) {
         <button className={classes.darkButton}>Dark Mode</button>
       </div>
       <div className={classes.infoContainer}>
-        <img
-          src="./img/Home/Landing/avatar.png"
-          alt="AV"
-          className={classes.avatar}
-        />
-        <div></div>
-        <h1 className={classes.title}>I am Abraham Cepeda</h1>
-        <h3 className={classes.text}>
-          I am a 20 year old computer programmer studying computer science at
-          Tecnológico de Monterrey while developing my technological skills.
-        </h3>
+        
       </div>
     </div>
   );

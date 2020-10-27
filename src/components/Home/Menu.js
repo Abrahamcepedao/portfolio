@@ -14,6 +14,7 @@ const useStyles = makeStyles((theme) => ({
     bottom: "0px",
     width: "100vw",
     height: "100px",
+    zIndex: '1'
   },
   menuContainer: {
     width: "90%",
@@ -26,10 +27,30 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "space-evenly",
     alignItems: "center",
-    textAlign: "center"
+    textAlign: "center",
+    [theme.breakpoints.down('576')]: {
+      position: "relative",
+      width: "100%",
+      borderRadius: "0px",
+      boxShadow: "none",
+      top: "20%"
+    }
+  },
+  navLinks: {
+    textDecoration: 'none'
   },
   menuItem: {
-      cursor: "pointer"
+      cursor: "pointer",
+      color: 'black',
+  },
+  menuItemText: {
+    textDecoration: 'none !important',
+    textDecorationLine: 'none',
+    margin: '0px',
+    color: 'black',
+    [theme.breakpoints.down('576')]: {
+      fontSize: '12px'
+    }
   }
 }));
 
@@ -46,7 +67,7 @@ function Menu({ classes }) {
         >
           <div className={classes.menuItem}>
             <HomeIcon />
-            <p>Home</p>
+            <p className={classes.menuItemText}>Home</p>
           </div>
         </HashLink>
         <HashLink
@@ -57,7 +78,7 @@ function Menu({ classes }) {
         >
           <div className={classes.menuItem}>
             <SchoolIcon />
-            <p>Education</p>
+            <p className={classes.menuItemText}>Education</p>
           </div>
         </HashLink>
         <HashLink
@@ -68,7 +89,7 @@ function Menu({ classes }) {
         >
           <div className={classes.menuItem}>
             <DesktopMacIcon />
-            <p>Projects</p>
+            <p className={classes.menuItemText}>Work & Projects</p>
           </div>
         </HashLink>
         <HashLink
@@ -79,7 +100,7 @@ function Menu({ classes }) {
         >
           <div className={classes.menuItem}>
             <CodeIcon />
-            <p>Skills</p>
+            <p className={classes.menuItemText}>Skills</p>
           </div>
         </HashLink>
         <HashLink
@@ -90,7 +111,7 @@ function Menu({ classes }) {
         >
           <div className={classes.menuItem}>
             <ContactMailIcon />
-            <p>Contact</p>
+            <p className={classes.menuItemText}>Contact</p>
           </div>
         </HashLink>
       </div>

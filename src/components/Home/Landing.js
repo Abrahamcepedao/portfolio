@@ -3,12 +3,14 @@ import { makeStyles } from "@material-ui/core/styles";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import * as basicScroll from "basicscroll";
 
 const useStyles = makeStyles((theme) => ({
   landingContainer: {
     width: "100vw",
     height: "100vh",
-    backgroundImage: "linear-gradient(to bottom, #EEEEFF, #617C8B)",
+    backgroundColor: "#EEEEFF",
+    //backgroundImage: "linear-gradient(to bottom, #EEEEFF, #617C8B)",
   },
   topContainer: {
     width: "90%",
@@ -52,15 +54,24 @@ const useStyles = makeStyles((theme) => ({
     width: "80%",
     objectFit: "contain",
     margin: "auto",
+    [theme.breakpoints.down('576')]: {
+      width: "50%"
+    }
   },
   title: {
     fontSize: "50px",
     fontWeight: "bold",
     marginBottom: "20px",
+    [theme.breakpoints.down('576')]: {
+      fontSize: "30px"
+    }
   },
   text: {
     fontSize: "25px",
-    fontWeight: "bolder",
+    fontWeight: "400",
+    [theme.breakpoints.down('576')]:{
+      fontSize: "18px"
+    }
   },
 }));
 
