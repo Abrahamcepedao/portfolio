@@ -9,7 +9,8 @@ const useStyles = makeStyles((theme) => ({
   landingContainer: {
     width: "100vw",
     height: "100vh",
-    backgroundColor: "#EEEEFF",
+    backgroundImage: 'url(./)'
+    //backgroundColor: "#EEEEFF",
     //backgroundImage: "linear-gradient(to bottom, #EEEEFF, #617C8B)",
   },
   topContainer: {
