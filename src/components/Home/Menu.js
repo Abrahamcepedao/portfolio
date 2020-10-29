@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
     height: "80%",
     maxWidth: "700px",
     margin: "auto",
-    backgroundColor: "#EEEEFF",
+    backgroundColor: "rgb(247,247,255)",
     borderRadius: "40px",
     boxShadow: "0 5px 10px rgba(25, 25, 25, 0.15), 0 10px 10px rgba(25, 25, 25, 0.12)",
     display: "flex",

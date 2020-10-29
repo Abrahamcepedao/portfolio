@@ -8,87 +8,65 @@ const useStyles = makeStyles((theme) => ({
   landingContainer: {
     width: "100vw",
     height: "100vh",
-    backgroundImage: "linear-gradient(to bottom, #EEEEFF, #617C8B)",
-  },
-  topContainer: {
-    width: "90%",
-    maxWidth: "800px",
-    margin: "auto",
-    padding: "20px",
-    display: "flex",
-    justifyContent: "space-between",
-    alignItems: "center",
-  },
-  logo: {
-    width: "80px",
-    objectFit: "contain",
-  },
-  socialIcons: {
-    flex: "1",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  darkButton: {
-    width: "100px",
-    height: "30px",
-    fontWeight: "bolder",
-    backgroundColor: "#010400",
-    borderRadius: "25px",
-    color: "#EEEEFF",
-    textAlign: "center",
+    backgroundImage: 'linear-gradient(180deg, rgb(247,247,255)0%, rgb(255,255,255)100%)'
   },
   infoContainer: {
-    width: "90%",
-    maxWidth: "600px",
-    position: "absolute",
-    left: "50%",
-    top: "50%",
-    transform: "translate(-50%, -50%)",
+    width: "100%",
+    margin: "auto",
     textAlign: "center",
     color: "#010400",
-  },
-  avatar: {
-    width: "80%",
-    objectFit: "contain",
-    margin: "auto",
+    padding: "50px"
   },
   title: {
-    fontSize: "50px",
+    fontSize: "100px",
     fontWeight: "bold",
-    marginBottom: "20px",
+    marginBottom: "50px",
+    [theme.breakpoints.down('576')]: {
+      fontSize: "35px"
+    }
   },
-  text: {
-    fontSize: "25px",
-    fontWeight: "bolder",
+  itemContainer: {
+    width: '100%',
+    height: "300px",
+    backgroundImage: "url(./img/Home/Education/background.jpg)",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    margin: "auto",
+    borderRadius: "10px",
+    marginBottom: "30px",
+    transition: "transform 450ms",
+    '&:hover': {
+      transform: "scale(1.02)",
+    },
   },
+  itemOverlay: {
+    width: "100%",
+    height: "100%",
+    backgroundColor: "rgba(20,20,20,0.75)",
+    borderRadius: "10px",
+    padding: "50px 20px",
+    marginBottom: "30px",
+    display: "grid",
+    flexDirection: "column",
+    justifyContent: "space-evenly",
+    textAlign: 'center',
+    color: 'white',
+  },
+  itemButton: {
+    minWidth: "100px",
+    margin: "auto",
+    borderRadius: "25px",
+    padding: "10px 20px"
+  }
 }));
 
 function Projects({ classes }) {
   classes = useStyles();
   return (
     <div className={classes.landingContainer} id={"projects"}>
-      <div className={classes.topContainer}>
-        <img
-          src="./img/Home/Landing/logo.png"
-          alt="AC"
-          className={classes.logo}
-        />
-        <div className={classes.socialIcons}>
-          <InstagramIcon
-            style={{ margin: "10px", color: "#010400", fontSize: "25px" }}
-          />
-          <GitHubIcon
-            style={{ margin: "10px", color: "#010400", fontSize: "25px" }}
-          />
-          <LinkedInIcon
-            style={{ margin: "10px", color: "#010400", fontSize: "25px" }}
-          />
-        </div>
-        <button className={classes.darkButton}>Dark Mode</button>
-      </div>
       <div className={classes.infoContainer}>
-        
+        <h1 className={classes.title}>Projects</h1>
       </div>
     </div>
   );
