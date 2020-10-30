@@ -90,7 +90,7 @@ function Education({ classes }) {
         <h1 className={classes.title}>Education</h1>
         <Row>
           <Col sm={6}>
-            <div className={classes.itemContainer}>
+            <div className={classes.itemContainer} style={{backgroundImage: "url(./img/Home/Education/madison.jpg)"}}>
               <div className={classes.itemOverlay}>
                 <p>High School</p>
                 <h3>Madison International School</h3>
@@ -99,7 +99,7 @@ function Education({ classes }) {
             </div>
           </Col>
           <Col sm={6}>
-            <div className={classes.itemContainer}>
+            <div className={classes.itemContainer} style={{backgroundImage: "url(./img/Home/Education/ai.jpg)"}}>
               <div className={classes.itemOverlay}>
                 <p>Online and in-person</p>
                 <h3>Courses</h3>
@@ -108,7 +108,7 @@ function Education({ classes }) {
             </div>
           </Col>
           <Col>
-            <div className={classes.itemContainer}>
+            <div className={classes.itemContainer} style={{backgroundImage: "url(./img/Home/Education/ITESM.jpg)"}}>
               <div className={classes.itemOverlay}>
                 <p>CS Bachelor</p>
                 <h3>Tecnológico de Monterrey</h3>
