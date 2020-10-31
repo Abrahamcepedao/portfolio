@@ -167,10 +167,10 @@ function Projects({ classes }) {
                     <h3 className={classes.projectTitle}>Netflix clone</h3>
                     <p className={classes.projectText}>A Netflix clone imatiting its design and some of its functionality. Based on a tutorial with additional functions.</p>
                     <div className={classes.projectTagsRow}>
-                      <div className={classes.projectTagsItem}><p className={classes.projectTagsItemText}>React</p></div>
-                      <div className={classes.projectTagsItem}><p className={classes.projectTagsItemText}>item</p></div>
-                      <div className={classes.projectTagsItem}><p className={classes.projectTagsItemText}>item</p></div>
-                      <div className={classes.projectTagsItem}><p className={classes.projectTagsItemText}>item</p></div>
+                      <div className={classes.projectTagsItem} style={{backgroundColor: "#C33C54"}}><p className={classes.projectTagsItemText}>React</p></div>
+                      <div className={classes.projectTagsItem} style={{backgroundColor: "#E89005"}}><p className={classes.projectTagsItemText}>Firebase</p></div>
+                      <div className={classes.projectTagsItem} style={{backgroundColor: "#EC7505"}}><p className={classes.projectTagsItemText}>IMDB_API</p></div>
+                      <div className={classes.projectTagsItem} style={{backgroundColor: "#007CBE"}}><p className={classes.projectTagsItemText}>Material_UI</p></div>
                     </div>
                     <Row>
                       <ColorButton className={classes.itemButton}><a href="https://github.com/Abrahamcepedao/Netflix-react-clone" target="_blank" className={classes.itemLink}>Repo</a></ColorButton>
