@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import { makeStyles, withStyles } from "@material-ui/core/styles";
 import { Row, Col } from 'react-bootstrap';
+import Modal from 'react-bootstrap/Modal';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button } from "@material-ui/core";
 import { grey } from "@material-ui/core/colors";
@@ -82,8 +83,96 @@ const ColorButton = withStyles((theme) => ({
   },
 }))(Button);
 
+function EducationModal(props) {
+  return (
+    <Modal
+      {...props}
+      size="lg"
+      aria-labelledby="contained-modal-title-vcenter"
+      centered
+    >
+      <Modal.Header closeButton>
+        <Modal.Title id="contained-modal-title-vcenter">
+          Madison International School - Campus Mérida
+        </Modal.Title>
+      </Modal.Header>
+      <Modal.Body>
+        <h4>Centered Modal</h4>
+        <p>
+          Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
+          dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
+          consectetur ac, vestibulum at eros.
+        </p>
+      </Modal.Body>
+      <Modal.Footer>
+        <Button onClick={props.onHide}>Close</Button>
+      </Modal.Footer>
+    </Modal>
+  );
+}
+
+function BachelorModal(props) {
+  return (
+    <Modal
+      {...props}
+      size="lg"
+      aria-labelledby="contained-modal-title-vcenter"
+      centered
+    >
+      <Modal.Header closeButton>
+        <Modal.Title id="contained-modal-title-vcenter">
+          Computer Science Bachelor at ITESM
+        </Modal.Title>
+      </Modal.Header>
+      <Modal.Body>
+        <h4>Centered Modal</h4>
+        <p>
+          Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
+          dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
+          consectetur ac, vestibulum at eros.
+        </p>
+      </Modal.Body>
+      <Modal.Footer>
+        <Button onClick={props.onHide}>Close</Button>
+      </Modal.Footer>
+    </Modal>
+  );
+}
+
+function CoursesModal(props) {
+  return (
+    <Modal
+      {...props}
+      size="lg"
+      aria-labelledby="contained-modal-title-vcenter"
+      centered
+    >
+      <Modal.Header closeButton>
+        <Modal.Title id="contained-modal-title-vcenter">
+          Online and in-person courses
+        </Modal.Title>
+      </Modal.Header>
+      <Modal.Body>
+        <h4>Centered Modal</h4>
+        <p>
+          Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
+          dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
+          consectetur ac, vestibulum at eros.
+        </p>
+      </Modal.Body>
+      <Modal.Footer>
+        <Button onClick={props.onHide}>Close</Button>
+      </Modal.Footer>
+    </Modal>
+  );
+}
+
+
 function Education({ classes }) {
   classes = useStyles();
+  const [highSchoolModalShow, setHighSchoolModalShow] = useState(false);
+  const [coursesModalShow, setCoursesModalShow] = useState(false);
+  const [bachelorModalShow, setBachelorModalShow] = useState(false);
   return (
     <div className={classes.landingContainer} id={"education"}>
       <div className={classes.infoContainer}>
@@ -94,7 +183,7 @@ function Education({ classes }) {
               <div className={classes.itemOverlay}>
                 <p>High School</p>
                 <h3>Madison International School</h3>
-                <ColorButton className={classes.itemButton}>More info</ColorButton>
+                <ColorButton className={classes.itemButton} onClick={() => setHighSchoolModalShow(true)}>More info</ColorButton>
               </div>
             </div>
           </Col>
@@ -103,7 +192,7 @@ function Education({ classes }) {
               <div className={classes.itemOverlay}>
                 <p>Online and in-person</p>
                 <h3>Courses</h3>
-                <ColorButton className={classes.itemButton}>More info</ColorButton>
+                <ColorButton className={classes.itemButton} onClick={() => setCoursesModalShow(true)}>More info</ColorButton>
               </div>
             </div>
           </Col>
@@ -112,12 +201,24 @@ function Education({ classes }) {
               <div className={classes.itemOverlay}>
                 <p>CS Bachelor</p>
                 <h3>Tecnológico de Monterrey</h3>
-                <ColorButton className={classes.itemButton}>More info</ColorButton>
+                <ColorButton className={classes.itemButton} onClick={() => setBachelorModalShow(true)}>More info</ColorButton>
               </div>
             </div>
           </Col>
         </Row>
       </div>
+      <EducationModal
+        show={highSchoolModalShow}
+        onHide={() => setHighSchoolModalShow(false)}
+      />
+      <CoursesModal
+        show={coursesModalShow}
+        onHide={() => setCoursesModalShow(false)}
+      />
+      <BachelorModal
+        show={bachelorModalShow}
+        onHide={() => setBachelorModalShow(false)}
+      />
     </div>
   );
 }

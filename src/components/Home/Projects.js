@@ -1,7 +1,7 @@
 import React from "react";
 import { makeStyles, withStyles } from "@material-ui/core/styles";
 import { Button } from "@material-ui/core";
-import { lightBlue } from "@material-ui/core/colors";
+import { grey } from "@material-ui/core/colors";
 import ArrowRightAltIcon from '@material-ui/icons/ArrowRightAlt';
 import { Row } from "react-bootstrap";
 
@@ -135,19 +135,19 @@ const useStyles = makeStyles((theme) => ({
 const ColorButton = withStyles((theme) => ({
   root: {
     color: "#010400",
-    backgroundColor: lightBlue[500],
+    backgroundColor: grey[50],
     transition: "transform 450ms",
     '&:hover': {
-      backgroundColor: lightBlue[700],
+      backgroundColor: grey[100],
       transform: "scale(1.08)",
     },
     '&:active': {
       boxShadow: 'none',
-      backgroundColor: lightBlue[700],
+      backgroundColor: grey[100],
       border: 'none',
     },
     '&:focus': {
-      backgroundColor: lightBlue[700],
+      backgroundColor: grey[100],
     },
   },
 }))(Button);
@@ -185,10 +185,11 @@ function Projects({ classes }) {
                     <h3 className={classes.projectTitle}>Spotify clone</h3>
                     <p className={classes.projectText}>A Spotify clone imatiting its design and some of its functionality. Based on a tutorial with additional functions.</p>
                     <div className={classes.projectTagsRow}>
-                      <div className={classes.projectTagsItem}><p className={classes.projectTagsItemText}>item</p></div>
-                      <div className={classes.projectTagsItem}><p className={classes.projectTagsItemText}>item</p></div>
-                      <div className={classes.projectTagsItem}><p className={classes.projectTagsItemText}>item</p></div>
-                      <div className={classes.projectTagsItem}><p className={classes.projectTagsItemText}>item</p></div>
+                      <div className={classes.projectTagsItem} style={{backgroundColor: "#C33C54"}}><p className={classes.projectTagsItemText}>React</p></div>
+                      <div className={classes.projectTagsItem} style={{backgroundColor: "#E89005"}}><p className={classes.projectTagsItemText}>Firebase</p></div>
+                      <div className={classes.projectTagsItem} style={{backgroundColor: "#EC7505"}}><p className={classes.projectTagsItemText}>Spotify_API</p></div>
+                      <div className={classes.projectTagsItem} style={{backgroundColor: "#B7F0AD"}}><p className={classes.projectTagsItemText}>Context_API</p></div>
+                      <div className={classes.projectTagsItem} style={{backgroundColor: "#007CBE"}}><p className={classes.projectTagsItemText}>Material_UI</p></div>
                     </div>
                     <Row>
                       <ColorButton className={classes.itemButton}><a href="https://github.com/Abrahamcepedao/spotify-clone" target="_blank" className={classes.itemLink}>Repo</a></ColorButton>
@@ -203,10 +204,10 @@ function Projects({ classes }) {
                     <h3 className={classes.projectTitle}>Amazon clone</h3>
                     <p className={classes.projectText}>An Amazone clone imatiting its design and some of its functionality. Based on a tutorial with additional functions.</p>
                     <div className={classes.projectTagsRow}>
-                      <div className={classes.projectTagsItem}><p className={classes.projectTagsItemText}>item</p></div>
-                      <div className={classes.projectTagsItem}><p className={classes.projectTagsItemText}>item</p></div>
-                      <div className={classes.projectTagsItem}><p className={classes.projectTagsItemText}>item</p></div>
-                      <div className={classes.projectTagsItem}><p className={classes.projectTagsItemText}>item</p></div>
+                      <div className={classes.projectTagsItem} style={{backgroundColor: "#C33C54"}}><p className={classes.projectTagsItemText}>React</p></div>
+                      <div className={classes.projectTagsItem} style={{backgroundColor: "#E89005"}}><p className={classes.projectTagsItemText}>Firebase</p></div>
+                      <div className={classes.projectTagsItem} style={{backgroundColor: "#B7F0AD"}}><p className={classes.projectTagsItemText}>Context_API</p></div>
+                      <div className={classes.projectTagsItem} style={{backgroundColor: "#007CBE"}}><p className={classes.projectTagsItemText}>Material_UI</p></div>
                     </div>
                     <Row>
                       <ColorButton className={classes.itemButton}><a href="https://github.com/Abrahamcepedao/Amazon-clone" target="_blank" className={classes.itemLink}>Repo</a></ColorButton>
@@ -221,10 +222,10 @@ function Projects({ classes }) {
                     <h3 className={classes.projectTitle}>Hulu clone</h3>
                     <p className={classes.projectText}>A Hulu clone imatiting its design and some of its functionality. Based on a tutorial with additional functions.</p>
                     <div className={classes.projectTagsRow}>
-                      <div className={classes.projectTagsItem}><p className={classes.projectTagsItemText}>item</p></div>
-                      <div className={classes.projectTagsItem}><p className={classes.projectTagsItemText}>item</p></div>
-                      <div className={classes.projectTagsItem}><p className={classes.projectTagsItemText}>item</p></div>
-                      <div className={classes.projectTagsItem}><p className={classes.projectTagsItemText}>item</p></div>
+                      <div className={classes.projectTagsItem} style={{backgroundColor: "#C33C54"}}><p className={classes.projectTagsItemText}>React</p></div>
+                      <div className={classes.projectTagsItem} style={{backgroundColor: "#E89005"}}><p className={classes.projectTagsItemText}>Firebase</p></div>
+                      <div className={classes.projectTagsItem} style={{backgroundColor: "#B7F0AD"}}><p className={classes.projectTagsItemText}>Context_API</p></div>
+                      <div className={classes.projectTagsItem} style={{backgroundColor: "#007CBE"}}><p className={classes.projectTagsItemText}>Material_UI</p></div>
                     </div>
                     <Row>
                       <ColorButton className={classes.itemButton}><a href="https://github.com/Abrahamcepedao/Hulu-clone" target="_blank" className={classes.itemLink}>Repo</a></ColorButton>
@@ -239,10 +240,10 @@ function Projects({ classes }) {
                     <h3 className={classes.projectTitle}>Instagram clone</h3>
                     <p className={classes.projectText}>A Instagram clone imatiting its design and some of its functionality. Based on a tutorial with additional functions.</p>
                     <div className={classes.projectTagsRow}>
-                      <div className={classes.projectTagsItem}><p className={classes.projectTagsItemText}>item</p></div>
-                      <div className={classes.projectTagsItem}><p className={classes.projectTagsItemText}>item</p></div>
-                      <div className={classes.projectTagsItem}><p className={classes.projectTagsItemText}>item</p></div>
-                      <div className={classes.projectTagsItem}><p className={classes.projectTagsItemText}>item</p></div>
+                      <div className={classes.projectTagsItem} style={{backgroundColor: "#C33C54"}}><p className={classes.projectTagsItemText}>React</p></div>
+                      <div className={classes.projectTagsItem} style={{backgroundColor: "#E89005"}}><p className={classes.projectTagsItemText}>Firebase</p></div>
+                      <div className={classes.projectTagsItem} style={{backgroundColor: "#B7F0AD"}}><p className={classes.projectTagsItemText}>Context_API</p></div>
+                      <div className={classes.projectTagsItem} style={{backgroundColor: "#007CBE"}}><p className={classes.projectTagsItemText}>Material_UI</p></div>
                     </div>
                     <Row>
                       <ColorButton className={classes.itemButton}><a href="https://github.com/Abrahamcepedao/instagram-clone-react" target="_blank" className={classes.itemLink}>Repo</a></ColorButton>
@@ -257,10 +258,10 @@ function Projects({ classes }) {
                     <h3 className={classes.projectTitle}>Evernote clone</h3>
                     <p className={classes.projectText}>A Evernote clone imatiting its design and some of its functionality. Based on a tutorial with additional functions.</p>
                     <div className={classes.projectTagsRow}>
-                      <div className={classes.projectTagsItem}><p className={classes.projectTagsItemText}>item</p></div>
-                      <div className={classes.projectTagsItem}><p className={classes.projectTagsItemText}>item</p></div>
-                      <div className={classes.projectTagsItem}><p className={classes.projectTagsItemText}>item</p></div>
-                      <div className={classes.projectTagsItem}><p className={classes.projectTagsItemText}>item</p></div>
+                      <div className={classes.projectTagsItem} style={{backgroundColor: "#C33C54"}}><p className={classes.projectTagsItemText}>React</p></div>
+                      <div className={classes.projectTagsItem} style={{backgroundColor: "#E89005"}}><p className={classes.projectTagsItemText}>Firebase</p></div>
+                      <div className={classes.projectTagsItem} style={{backgroundColor: "#B7F0AD"}}><p className={classes.projectTagsItemText}>Context_API</p></div>
+                      <div className={classes.projectTagsItem} style={{backgroundColor: "#007CBE"}}><p className={classes.projectTagsItemText}>Material_UI</p></div>
                     </div>
                     <Row>
                       <ColorButton className={classes.itemButton}><a href="https://github.com/Abrahamcepedao/Netflix-react-clone" target="_blank" className={classes.itemLink}>Repo</a></ColorButton>
@@ -275,10 +276,10 @@ function Projects({ classes }) {
                     <h3 className={classes.projectTitle}>Project manager</h3>
                     <p className={classes.projectText}>A project management web app to list the activities needed to be done for each project</p>
                     <div className={classes.projectTagsRow}>
-                      <div className={classes.projectTagsItem}><p className={classes.projectTagsItemText}>item</p></div>
-                      <div className={classes.projectTagsItem}><p className={classes.projectTagsItemText}>item</p></div>
-                      <div className={classes.projectTagsItem}><p className={classes.projectTagsItemText}>item</p></div>
-                      <div className={classes.projectTagsItem}><p className={classes.projectTagsItemText}>item</p></div>
+                      <div className={classes.projectTagsItem} style={{backgroundColor: "#C33C54"}}><p className={classes.projectTagsItemText}>React</p></div>
+                      <div className={classes.projectTagsItem} style={{backgroundColor: "#E89005"}}><p className={classes.projectTagsItemText}>Firebase</p></div>
+                      <div className={classes.projectTagsItem} style={{backgroundColor: "#B7F0AD"}}><p className={classes.projectTagsItemText}>Context_API</p></div>
+                      <div className={classes.projectTagsItem} style={{backgroundColor: "#007CBE"}}><p className={classes.projectTagsItemText}>Material_UI</p></div>
                     </div>
                     <Row>
                       <ColorButton className={classes.itemButton}><a href="https://github.com/Abrahamcepedao/project-management-reacp-app" target="_blank" className={classes.itemLink}>Repo</a></ColorButton>
@@ -293,10 +294,10 @@ function Projects({ classes }) {
                     <h3 className={classes.projectTitle}>Todo list</h3>
                     <p className={classes.projectText}>A todo list web app made with React and Firebase. I made it to learn the basics of React</p>
                     <div className={classes.projectTagsRow}>
-                      <div className={classes.projectTagsItem}><p className={classes.projectTagsItemText}>item</p></div>
-                      <div className={classes.projectTagsItem}><p className={classes.projectTagsItemText}>item</p></div>
-                      <div className={classes.projectTagsItem}><p className={classes.projectTagsItemText}>item</p></div>
-                      <div className={classes.projectTagsItem}><p className={classes.projectTagsItemText}>item</p></div>
+                      <div className={classes.projectTagsItem} style={{backgroundColor: "#C33C54"}}><p className={classes.projectTagsItemText}>React</p></div>
+                      <div className={classes.projectTagsItem} style={{backgroundColor: "#E89005"}}><p className={classes.projectTagsItemText}>Firebase</p></div>
+                      <div className={classes.projectTagsItem} style={{backgroundColor: "#B7F0AD"}}><p className={classes.projectTagsItemText}>Context_API</p></div>
+                      <div className={classes.projectTagsItem} style={{backgroundColor: "#007CBE"}}><p className={classes.projectTagsItemText}>Material_UI</p></div>
                     </div>
                     <Row>
                       <ColorButton className={classes.itemButton}><a href="https://github.com/Abrahamcepedao/Netflix-react-clone" target="_blank" className={classes.itemLink}>Repo</a></ColorButton>
@@ -311,10 +312,9 @@ function Projects({ classes }) {
                     <h3 className={classes.projectTitle}>Tudu</h3>
                     <p className={classes.projectText}>I made a todo list iOS app, seeking to learn these skills and having a personalized todo list app</p>
                     <div className={classes.projectTagsRow}>
-                      <div className={classes.projectTagsItem}><p className={classes.projectTagsItemText}>item</p></div>
-                      <div className={classes.projectTagsItem}><p className={classes.projectTagsItemText}>item</p></div>
-                      <div className={classes.projectTagsItem}><p className={classes.projectTagsItemText}>item</p></div>
-                      <div className={classes.projectTagsItem}><p className={classes.projectTagsItemText}>item</p></div>
+                      <div className={classes.projectTagsItem} style={{backgroundColor: "#C33C54"}}><p className={classes.projectTagsItemText}>Swift</p></div>
+                      <div className={classes.projectTagsItem} style={{backgroundColor: "#E89005"}}><p className={classes.projectTagsItemText}>Xcode</p></div>
+                      <div className={classes.projectTagsItem} style={{backgroundColor: "#EC7505"}}><p className={classes.projectTagsItemText}>Realm</p></div>
                     </div>
                     <Row>
                       <ColorButton className={classes.itemButton}><a href="https://github.com/Abrahamcepedao/TuDu_App" target="_blank" className={classes.itemLink}>Repo</a></ColorButton>
@@ -328,10 +328,8 @@ function Projects({ classes }) {
                     <h3 className={classes.projectTitle}>Bulk url shortener</h3>
                     <p className={classes.projectText}>I made a bulk url shortener using python and the tiny url API. Its opensource so anyone can use it.</p>
                     <div className={classes.projectTagsRow}>
-                      <div className={classes.projectTagsItem}><p className={classes.projectTagsItemText}>item</p></div>
-                      <div className={classes.projectTagsItem}><p className={classes.projectTagsItemText}>item</p></div>
-                      <div className={classes.projectTagsItem}><p className={classes.projectTagsItemText}>item</p></div>
-                      <div className={classes.projectTagsItem}><p className={classes.projectTagsItemText}>item</p></div>
+                      <div className={classes.projectTagsItem} style={{backgroundColor: "#C33C54"}}><p className={classes.projectTagsItemText}>Python</p></div>
+                      <div className={classes.projectTagsItem} style={{backgroundColor: "#E89005"}}><p className={classes.projectTagsItemText}>TinyUrl_API</p></div>
                     </div>
                     <Row>
                       <ColorButton className={classes.itemButton}><a href="https://github.com/Abrahamcepedao/TuDu_App" target="_blank" className={classes.itemLink}>Repo</a></ColorButton>
