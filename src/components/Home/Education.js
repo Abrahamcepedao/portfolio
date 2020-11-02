@@ -4,7 +4,14 @@ import { Row, Col } from 'react-bootstrap';
 import Modal from 'react-bootstrap/Modal';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button } from "@material-ui/core";
-import { grey } from "@material-ui/core/colors";
+import { grey, lightBlue } from "@material-ui/core/colors";
+import List from '@material-ui/core/List';
+import InfoIcon from '@material-ui/icons/Info';
+import ListItemIcon from '@material-ui/core/ListItemIcon';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemText from '@material-ui/core/ListItemText';
+import Grid from '@material-ui/core/Grid';
+import FolderIcon from '@material-ui/icons/Folder';
 
 const useStyles = makeStyles((theme) => ({
   landingContainer: {
@@ -55,12 +62,23 @@ const useStyles = makeStyles((theme) => ({
     textAlign: 'center',
     color: 'white',
   },
+  modalButtonContainer: {
+    textAlign: "center"
+  },
   itemButton: {
     minWidth: "100px",
     margin: "auto",
     borderRadius: "25px",
-    padding: "10px 20px"
-  }
+    padding: "10px 20px",
+  },
+  itemLink: {
+    textDecoration: "none",
+    color: "rgb(20,20,20)",
+    '&:hover': {
+      textDecoration: "none !important",
+      color: "rgb(20,20,20)",
+    }
+  },
 }));
 
 const ColorButton = withStyles((theme) => ({
@@ -83,7 +101,28 @@ const ColorButton = withStyles((theme) => ({
   },
 }))(Button);
 
-function EducationModal(props) {
+const ColorButtonBlue = withStyles((theme) => ({
+  root: {
+    color: "#010400",
+    backgroundColor: lightBlue[500],
+    transition: "transform 450ms",
+    '&:hover': {
+      backgroundColor: lightBlue[700],
+      transform: "scale(1.08)",
+    },
+    '&:active': {
+      boxShadow: 'none',
+      backgroundColor: lightBlue[700],
+      border: 'none',
+    },
+    '&:focus': {
+      backgroundColor: lightBlue[700],
+    },
+  },
+}))(Button);
+
+function EducationModal(props, {classes}) {
+  classes = useStyles();
   return (
     <Modal
       {...props}
@@ -97,21 +136,20 @@ function EducationModal(props) {
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <h4>Centered Modal</h4>
         <p>
-          Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-          dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-          consectetur ac, vestibulum at eros.
+          While I was in high school, the school was in the process of being certified by the IB (International Baccalaureate). Therefore, I experienced the rigurosity of this diploma to a significant extent.
         </p>
+        <p>During the last two years of high school, I studied a computer science class where we learned how to program in Java using the Eclipse IDE. Furthermore, we learned about network structure and components.</p>
+        <div className={classes.modalButtonContainer}>
+          <ColorButtonBlue className={classes.itemButton}><a href="https://github.com/Abrahamcepedao/Computer-Science-IB-course" target="_blank" className={classes.itemLink}>REPO</a></ColorButtonBlue>
+        </div>
       </Modal.Body>
-      <Modal.Footer>
-        <Button onClick={props.onHide}>Close</Button>
-      </Modal.Footer>
     </Modal>
   );
 }
 
-function BachelorModal(props) {
+function BachelorModal(props, {classes}) {
+  classes = useStyles();
   return (
     <Modal
       {...props}
@@ -125,21 +163,109 @@ function BachelorModal(props) {
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <h4>Centered Modal</h4>
-        <p>
-          Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-          dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-          consectetur ac, vestibulum at eros.
-        </p>
+        <h4>First semester CS related classes</h4>
+        <List>
+          <ListItem>
+            <ListItemText
+              primary="Programación orientada a objetos I"
+              secondary={"C++"}
+            />
+          </ListItem>
+          <ListItem>
+            <ListItemText
+              primary="Modelación computacional aplicando leyes de conservación"
+              secondary={"MatLab"}
+            />
+          </ListItem>
+          <ListItem>
+            <ListItemText
+              primary="Modelación computacional del movimiento"
+              secondary={"MatLab"}
+            />
+          </ListItem>
+          <ListItem>
+            <ListItemText
+              primary="Pensamiento computacional"
+              secondary={"Python"}
+            />
+          </ListItem>
+        </List>
+        <h4>Second semester CS related classes</h4>
+        <List>
+          <ListItem>
+            <ListItemText
+              primary="Análisis de biología computacional"
+              secondary={"R"}
+            />
+          </ListItem>
+          <ListItem>
+            <ListItemText
+              primary="Experimentación física y pensamiento estadístico"
+              secondary={"MatLab"}
+            />
+          </ListItem>
+          <ListItem>
+            <ListItemText
+              primary="Modelación computacional de sistemas eléctricos"
+              secondary={"MatLab"}
+            />
+          </ListItem>
+          <ListItem>
+            <ListItemText
+              primary="Modelación computacional de sistemas electromagnéticos"
+              secondary={"MatLab"}
+            />
+          </ListItem>
+          <ListItem>
+            <ListItemText
+              primary="Modelación de la ingenería con matemática computacional"
+              secondary={"MatLab"}
+            />
+          </ListItem>
+          <ListItem>
+            <ListItemText
+              primary="Programación orientada a objetos II"
+              secondary={"C++"}
+            />
+          </ListItem>
+        </List>
+        <h4>Third semester CS related classes</h4>
+        <List>
+          <ListItem>
+            <ListItemText
+              primary="Programación de estructuras de datos y algoritmos fundamentales (C++)"
+              secondary={"C++"}
+            />
+          </ListItem>
+          <ListItem>
+            <ListItemText
+              primary="Modelación de sistemas mínimos y arquitecturas computacionales"
+              secondary={"Marie.js"}
+            />
+          </ListItem>
+          <ListItem>
+            <ListItemText
+              primary="Implementación de Internet de las cosas"
+              secondary={"MySQL • React • Firebase"}
+            />
+          </ListItem>
+          <ListItem>
+            <ListItemText
+              primary="Análisis de requerimento de Software"
+              secondary={"Swift"}
+            />
+          </ListItem>
+        </List>
+        <div className={classes.modalButtonContainer}>
+          <ColorButtonBlue className={classes.itemButton}><a href="https://github.com/Abrahamcepedao/ITC" target="_blank" className={classes.itemLink}>REPO</a></ColorButtonBlue>
+        </div>
       </Modal.Body>
-      <Modal.Footer>
-        <Button onClick={props.onHide}>Close</Button>
-      </Modal.Footer>
     </Modal>
   );
 }
 
-function CoursesModal(props) {
+function CoursesModal(props, {classes}) {
+  classes = useStyles();
   return (
     <Modal
       {...props}
@@ -153,20 +279,52 @@ function CoursesModal(props) {
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <h4>Centered Modal</h4>
-        <p>
-          Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-          dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-          consectetur ac, vestibulum at eros.
-        </p>
+        <Grid item>
+          <div className={classes.demo}>
+            <List>
+              <ListItem>
+                <ListItemText
+                  primary="iOS 13 & Swift 5 - The Complete iOS App Development Bootcamp"
+                  secondary={"iOS App Development"}
+                />
+                <ListItemIcon>
+                  <a href="https://www.udemy.com/course/ios-13-app-development-bootcamp/" target="_blank"><InfoIcon /></a>
+                </ListItemIcon>
+              </ListItem>
+              <ListItem>
+                <ListItemText
+                  primary="Diseño Web Desde Cero a Avanzado 45h Curso COMPLETO"
+                  secondary={"Web development"}
+                />
+                <ListItemIcon>
+                  <a href="https://www.udemy.com/course/diseno-web-desde-cero/" target="_blank"><InfoIcon /></a>
+                </ListItemIcon>
+              </ListItem>
+              <ListItem>
+                <ListItemText
+                  primary="Illustrator CC para novatos: ¡desde cero hasta experto!"
+                  secondary={"Graphic design"}
+                />
+                <ListItemIcon>
+                  <a href="https://www.udemy.com/course/illustrator-cc-para-novatos-desde-cero-hasta-experto/" target="_blank"><InfoIcon /></a>
+                </ListItemIcon>
+              </ListItem>
+              <ListItem>
+                <ListItemText
+                  primary="Artificial Inteligence with Python. In-person course imparted by Dacodes Academy"
+                  secondary={"Artificial Inteligence"}
+                />
+                <ListItemIcon>
+                  <a href="https://www.dacodes.com/" target="_blank"><InfoIcon /></a>
+                </ListItemIcon>
+              </ListItem>
+            </List>
+          </div>
+        </Grid>
       </Modal.Body>
-      <Modal.Footer>
-        <Button onClick={props.onHide}>Close</Button>
-      </Modal.Footer>
     </Modal>
   );
 }
-
 
 function Education({ classes }) {
   classes = useStyles();
