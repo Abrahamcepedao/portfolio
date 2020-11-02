@@ -6,10 +6,22 @@ import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import * as basicScroll from "basicscroll";
 
 const useStyles = makeStyles((theme) => ({
-  landingContainer: {
+  landingBackground: {
     width: "100vw",
     height: "100vh",
-    backgroundImage: 'linear-gradient(180deg, rgb(247,247,255)0%, rgb(255,255,255)100%)'
+    backgroundImage: 'url(./img/Home/Landing/background.png)',
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    [theme.breakpoints.up('992')]: {
+      backgroundAttachment: "fixed"
+    }
+    //backgroundColor: "#EEEEFF",
+    //backgroundImage: "linear-gradient(to bottom, #EEEEFF, #617C8B)",
+  },
+  landingContainer: {
+    width: "100%",
+    height: "100%",
+    backgroundImage: 'linear-gradient(180deg, rgba(247,247,255,1)10%, rgba(255,255,255,0)50%, rgba(247,247,255,1)90%)'
     //backgroundColor: "#EEEEFF",
     //backgroundImage: "linear-gradient(to bottom, #EEEEFF, #617C8B)",
   },
@@ -79,34 +91,37 @@ const useStyles = makeStyles((theme) => ({
 function Landing({classes}) {
     classes = useStyles();
     return (
-      <div className={classes.landingContainer} id={"home"}>
-        <div className={classes.topContainer}>
-          <img
-            src="./img/Home/Landing/logo.png"
-            alt="AC"
-            className={classes.logo}
-          />
-          <div className={classes.socialIcons}>
-            <InstagramIcon style={{ margin: "10px", color: "#010400", fontSize: "25px" }} />
-            <GitHubIcon style={{ margin: "10px", color: "#010400", fontSize: "25px" }} />
-            <LinkedInIcon style={{ margin: "10px", color: "#010400", fontSize: "25px" }} />
+      <div className={classes.landingBackground} id={"home"}>
+        <div className={classes.landingContainer}>
+          <div className={classes.topContainer}>
+            <img
+              src="./img/Home/Landing/logo.png"
+              alt="AC"
+              className={classes.logo}
+            />
+            <div className={classes.socialIcons}>
+              <InstagramIcon style={{ margin: "10px", color: "#010400", fontSize: "25px" }} />
+              <GitHubIcon style={{ margin: "10px", color: "#010400", fontSize: "25px" }} />
+              <LinkedInIcon style={{ margin: "10px", color: "#010400", fontSize: "25px" }} />
+            </div>
+            <button className={classes.darkButton}>Dark Mode</button>
           </div>
-          <button className={classes.darkButton}>Dark Mode</button>
-        </div>
-        <div className={classes.infoContainer}>
-          <img
-            src="./img/Home/Landing/avatar.png"
-            alt="AV"
-            className={classes.avatar}
-          />
-          <div></div>
-          <h1 className={classes.title}>I am Abraham Cepeda</h1>
-          <h3 className={classes.text}>
-            I am a 20 year old computer programmer studying computer science at
-            Tecnológico de Monterrey while developing my technological skills.
-          </h3>
+          <div className={classes.infoContainer}>
+            <img
+              src="./img/Home/Landing/avatar.png"
+              alt="AV"
+              className={classes.avatar}
+            />
+            <div></div>
+            <h1 className={classes.title}>I am Abraham Cepeda</h1>
+            <h3 className={classes.text}>
+              I am a 20 year old computer programmer studying computer science at
+              Tecnológico de Monterrey while developing my technological skills.
+            </h3>
+          </div>
         </div>
       </div>
+      
     );
 }
 

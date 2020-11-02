@@ -41,7 +41,6 @@ const useStyles = makeStyles((theme) => ({
   projectItem: {
     minWidth: '300px',
     height: "500px",
-    backgroundImage: "url(./img/Home/Education/background.jpg)",
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
@@ -274,7 +273,7 @@ function Projects({ classes }) {
               <div className={classes.projectOverlay}>
                   <div className={classes.projectInfo}>  
                     <h3 className={classes.projectTitle}>Project manager</h3>
-                    <p className={classes.projectText}>A project management web app to list the activities needed to be done for each project</p>
+                    <p className={classes.projectText}>A project management web app to list the activities needed to be done for each project.</p>
                     <div className={classes.projectTagsRow}>
                       <div className={classes.projectTagsItem} style={{backgroundColor: "#C33C54"}}><p className={classes.projectTagsItemText}>React</p></div>
                       <div className={classes.projectTagsItem} style={{backgroundColor: "#E89005"}}><p className={classes.projectTagsItemText}>Firebase</p></div>
@@ -292,7 +291,7 @@ function Projects({ classes }) {
               <div className={classes.projectOverlay}>
                   <div className={classes.projectInfo}>  
                     <h3 className={classes.projectTitle}>Todo list</h3>
-                    <p className={classes.projectText}>A todo list web app made with React and Firebase. I made it to learn the basics of React</p>
+                    <p className={classes.projectText}>A todo list web app made with React and Firebase. I made it to learn the basics of React.</p>
                     <div className={classes.projectTagsRow}>
                       <div className={classes.projectTagsItem} style={{backgroundColor: "#C33C54"}}><p className={classes.projectTagsItemText}>React</p></div>
                       <div className={classes.projectTagsItem} style={{backgroundColor: "#E89005"}}><p className={classes.projectTagsItemText}>Firebase</p></div>
@@ -310,7 +309,7 @@ function Projects({ classes }) {
               <div className={classes.projectOverlay}>
                   <div className={classes.projectInfo}>  
                     <h3 className={classes.projectTitle}>Tudu</h3>
-                    <p className={classes.projectText}>I made a todo list iOS app, seeking to learn these skills and having a personalized todo list app</p>
+                    <p className={classes.projectText}>I made a todo list iOS app, seeking to learn these skills and having a personalized todo list app.</p>
                     <div className={classes.projectTagsRow}>
                       <div className={classes.projectTagsItem} style={{backgroundColor: "#C33C54"}}><p className={classes.projectTagsItemText}>Swift</p></div>
                       <div className={classes.projectTagsItem} style={{backgroundColor: "#E89005"}}><p className={classes.projectTagsItemText}>Xcode</p></div>
@@ -343,146 +342,124 @@ function Projects({ classes }) {
         <div className={classes.projectsContainer}>
           <h2 className={classes.subtitle}>School projects</h2>
           <div className={classes.projectRow}>
-            <div className={classes.projectItem} style={{backgroundImage: "url(./img/Home/Projects/netflix.png)"}}>
+            <div className={classes.projectItem} style={{backgroundImage: "url(./img/Home/Projects/volcano.png)"}}>
               <div className={classes.projectOverlay}>
                   <div className={classes.projectInfo}>  
-                    <h3 className={classes.projectTitle}>Netflix clone</h3>
-                    <p className={classes.projectText}>Project description goes here ..Project description goes here ..Project description goes here ..</p>
+                    <h3 className={classes.projectTitle}>Projectile simulator</h3>
+                    <p className={classes.projectText}>A simulation of a projectile during a volcano eruption. This simulation can be altered with certain variables.</p>
                     <div className={classes.projectTagsRow}>
-                      <div className={classes.projectTagsItem}><p className={classes.projectTagsItemText}>item</p></div>
-                      <div className={classes.projectTagsItem}><p className={classes.projectTagsItemText}>item</p></div>
-                      <div className={classes.projectTagsItem}><p className={classes.projectTagsItemText}>item</p></div>
-                      <div className={classes.projectTagsItem}><p className={classes.projectTagsItemText}>item</p></div>
+                      <div className={classes.projectTagsItem} style={{backgroundColor: "#C33C54"}}><p className={classes.projectTagsItemText}>MatLab</p></div>
+                      <div className={classes.projectTagsItem} style={{backgroundColor: "#E89005"}}><p className={classes.projectTagsItemText}>MatLab_App</p></div>
                     </div>
                     <Row>
-                      <ColorButton className={classes.itemButton}><a href="https://github.com/Abrahamcepedao/Netflix-react-clone" target="_blank" className={classes.itemLink}>Repo</a></ColorButton>
-                      <ColorButton className={classes.itemButton}><a href="https://netflix-react-clone-90718.web.app/" target="_blank" className={classes.itemLink}>Website</a></ColorButton>
+                      <ColorButton className={classes.itemButton}><a href="https://github.com/Abrahamcepedao/ITC/tree/master/Semestre1/modelacion%20computacional%20del%20movimiento/MATLAB/proyecto%202" target="_blank" className={classes.itemLink}>Repo</a></ColorButton>
                     </Row>
                   </div>
               </div>
             </div>
-            <div className={classes.projectItem} style={{backgroundImage: "url(./img/Home/Projects/spotify.png)"}}>
+            <div className={classes.projectItem} style={{backgroundImage: "url(./img/Home/Projects/airport.png)"}}>
               <div className={classes.projectOverlay}>
                   <div className={classes.projectInfo}>  
-                    <h3 className={classes.projectTitle}>Spotify clone</h3>
-                    <p className={classes.projectText}>Project description goes here ..Project description goes here ..Project description goes here ..</p>
+                    <h3 className={classes.projectTitle}>Airport simulator</h3>
+                    <p className={classes.projectText}>A console simulation of an aiport where one can fetch flights according to the date among other funtions.</p>
                     <div className={classes.projectTagsRow}>
-                      <div className={classes.projectTagsItem}><p className={classes.projectTagsItemText}>item</p></div>
-                      <div className={classes.projectTagsItem}><p className={classes.projectTagsItemText}>item</p></div>
-                      <div className={classes.projectTagsItem}><p className={classes.projectTagsItemText}>item</p></div>
-                      <div className={classes.projectTagsItem}><p className={classes.projectTagsItemText}>item</p></div>
+                      <div className={classes.projectTagsItem} style={{backgroundColor: "#C33C54"}}><p className={classes.projectTagsItemText}>C++</p></div>
+                      <div className={classes.projectTagsItem} style={{backgroundColor: "#E89005"}}><p className={classes.projectTagsItemText}>txt_files</p></div>
                     </div>
                     <Row>
-                      <ColorButton className={classes.itemButton}><a href="https://github.com/Abrahamcepedao/spotify-clone" target="_blank" className={classes.itemLink}>Repo</a></ColorButton>
-                      <ColorButton className={classes.itemButton}><a href="https://spotify-clone-app-36604.web.app/" target="_blank" className={classes.itemLink}>Website</a></ColorButton>
+                      <ColorButton className={classes.itemButton}><a href="https://github.com/Abrahamcepedao/ITC/tree/master/Semestre1/c%2B%2B/A00827666_AbrahamCepedas" target="_blank" className={classes.itemLink}>Repo</a></ColorButton>
                     </Row>
                   </div>
               </div>
             </div>
-            <div className={classes.projectItem} style={{backgroundImage: "url(./img/Home/Projects/amazon.png)"}}>
+            <div className={classes.projectItem} style={{backgroundImage: "url(./img/Home/Projects/formula1.png)"}}>
               <div className={classes.projectOverlay}>
                   <div className={classes.projectInfo}>  
-                    <h3 className={classes.projectTitle}>Amazon clone</h3>
-                    <p className={classes.projectText}>Project description goes here ..Project description goes here ..Project description goes here ..</p>
+                    <h3 className={classes.projectTitle}>Curve simulator</h3>
+                    <p className={classes.projectText}>A simulator of a the curve of a formula 1 race track with the intent of finding the adecuate speed given the angle.</p>
                     <div className={classes.projectTagsRow}>
-                      <div className={classes.projectTagsItem}><p className={classes.projectTagsItemText}>item</p></div>
-                      <div className={classes.projectTagsItem}><p className={classes.projectTagsItemText}>item</p></div>
-                      <div className={classes.projectTagsItem}><p className={classes.projectTagsItemText}>item</p></div>
-                      <div className={classes.projectTagsItem}><p className={classes.projectTagsItemText}>item</p></div>
+                      <div className={classes.projectTagsItem} style={{backgroundColor: "#C33C54"}}><p className={classes.projectTagsItemText}>MatLab</p></div>
+                      <div className={classes.projectTagsItem} style={{backgroundColor: "#E89005"}}><p className={classes.projectTagsItemText}>MatLab_App</p></div>
                     </div>
                     <Row>
-                      <ColorButton className={classes.itemButton}><a href="https://github.com/Abrahamcepedao/Amazon-clone" target="_blank" className={classes.itemLink}>Repo</a></ColorButton>
-                      <ColorButton className={classes.itemButton}><a href="https://clone-89dfa.web.app/" target="_blank" className={classes.itemLink}>Website</a></ColorButton>
+                      <ColorButton className={classes.itemButton}><a href="https://github.com/Abrahamcepedao/ITC/tree/master/Semestre1/Modelacion%20computacional%20aplicando%20leyes%20de%20conservacion/archivos%20reto" target="_blank" className={classes.itemLink}>Repo</a></ColorButton>
                     </Row>
                   </div>
               </div>
             </div>
-            <div className={classes.projectItem} style={{backgroundImage: "url(./img/Home/Projects/hulu.png)"}}>
+            <div className={classes.projectItem} style={{backgroundImage: "url(./img/Home/Projects/electric.png)"}}>
               <div className={classes.projectOverlay}>
                   <div className={classes.projectInfo}>  
-                    <h3 className={classes.projectTitle}>Hulu clone</h3>
-                    <p className={classes.projectText}>Project description goes here ..Project description goes here ..Project description goes here ..</p>
+                    <h3 className={classes.projectTitle}>Electric field</h3>
+                    <p className={classes.projectText}>An electric field simulator that can be altered according to the value of several variables.</p>
                     <div className={classes.projectTagsRow}>
-                      <div className={classes.projectTagsItem}><p className={classes.projectTagsItemText}>item</p></div>
-                      <div className={classes.projectTagsItem}><p className={classes.projectTagsItemText}>item</p></div>
-                      <div className={classes.projectTagsItem}><p className={classes.projectTagsItemText}>item</p></div>
-                      <div className={classes.projectTagsItem}><p className={classes.projectTagsItemText}>item</p></div>
+                      <div className={classes.projectTagsItem} style={{backgroundColor: "#C33C54"}}><p className={classes.projectTagsItemText}>MatLab</p></div>
+                      <div className={classes.projectTagsItem} style={{backgroundColor: "#E89005"}}><p className={classes.projectTagsItemText}>MatLab_App</p></div>
                     </div>
                     <Row>
-                      <ColorButton className={classes.itemButton}><a href="https://github.com/Abrahamcepedao/Hulu-clone" target="_blank" className={classes.itemLink}>Repo</a></ColorButton>
-                      <ColorButton className={classes.itemButton}><a href="https://hulu-react-clone-401b1.web.app/" target="_blank" className={classes.itemLink}>Website</a></ColorButton>
+                      <ColorButton className={classes.itemButton}><a href="https://github.com/Abrahamcepedao/ITC/blob/master/Semestre2/Modelacion%20computacional%20de%20sistemas%20electricos/entregables/entregable_3.mlapp" target="_blank" className={classes.itemLink}>Repo</a></ColorButton>
                     </Row>
                   </div>
               </div>
             </div>
-            <div className={classes.projectItem} style={{backgroundImage: "url(./img/Home/Projects/instagram.png)"}}>
+            <div className={classes.projectItem} style={{backgroundImage: "url(./img/Home/Projects/magnetic.png)"}}>
               <div className={classes.projectOverlay}>
                   <div className={classes.projectInfo}>  
-                    <h3 className={classes.projectTitle}>Instagram clone</h3>
-                    <p className={classes.projectText}>Project description goes here ..Project description goes here ..Project description goes here ..</p>
+                    <h3 className={classes.projectTitle}>Magnetic field</h3>
+                    <p className={classes.projectText}>An electric field simulator that can be altered according to the value of several variables.</p>
                     <div className={classes.projectTagsRow}>
-                      <div className={classes.projectTagsItem}><p className={classes.projectTagsItemText}>item</p></div>
-                      <div className={classes.projectTagsItem}><p className={classes.projectTagsItemText}>item</p></div>
-                      <div className={classes.projectTagsItem}><p className={classes.projectTagsItemText}>item</p></div>
-                      <div className={classes.projectTagsItem}><p className={classes.projectTagsItemText}>item</p></div>
+                      <div className={classes.projectTagsItem} style={{backgroundColor: "#C33C54"}}><p className={classes.projectTagsItemText}>MatLab</p></div>
+                      <div className={classes.projectTagsItem} style={{backgroundColor: "#E89005"}}><p className={classes.projectTagsItemText}>MatLab_App</p></div>
                     </div>
                     <Row>
-                      <ColorButton className={classes.itemButton}><a href="https://github.com/Abrahamcepedao/instagram-clone-react" target="_blank" className={classes.itemLink}>Repo</a></ColorButton>
-                      <ColorButton className={classes.itemButton}><a href="https://instragam-clone-11576.web.app/" target="_blank" className={classes.itemLink}>Website</a></ColorButton>
+                      <ColorButton className={classes.itemButton}><a href="https://github.com/Abrahamcepedao/ITC/blob/master/Semestre2/Modelacion%20computacional%20de%20sistemas%20electromagneticos/entregables/entregable3.mlapp" target="_blank" className={classes.itemLink}>Repo</a></ColorButton>
                     </Row>
                   </div>
               </div>
             </div>
-            <div className={classes.projectItem} style={{backgroundImage: "url(./img/Home/Projects/evernote.png)"}}>
+            <div className={classes.projectItem} style={{backgroundImage: "url(./img/Home/Projects/genoma.png)"}}>
               <div className={classes.projectOverlay}>
                   <div className={classes.projectInfo}>  
-                    <h3 className={classes.projectTitle}>Evernote clone</h3>
-                    <p className={classes.projectText}>Project description goes here ..Project description goes here ..Project description goes here ..</p>
+                    <h3 className={classes.projectTitle}>Lung cancer</h3>
+                    <p className={classes.projectText}>An algorithm that analyzes certain genes to early detect the possibility of lung cancer in a certain gene.</p>
                     <div className={classes.projectTagsRow}>
-                      <div className={classes.projectTagsItem}><p className={classes.projectTagsItemText}>item</p></div>
-                      <div className={classes.projectTagsItem}><p className={classes.projectTagsItemText}>item</p></div>
-                      <div className={classes.projectTagsItem}><p className={classes.projectTagsItemText}>item</p></div>
-                      <div className={classes.projectTagsItem}><p className={classes.projectTagsItemText}>item</p></div>
+                      <div className={classes.projectTagsItem} style={{backgroundColor: "#C33C54"}}><p className={classes.projectTagsItemText}>R</p></div>
+                      <div className={classes.projectTagsItem} style={{backgroundColor: "#E89005"}}><p className={classes.projectTagsItemText}>Python</p></div>
+                      <div className={classes.projectTagsItem} style={{backgroundColor: "#B7F0AD"}}><p className={classes.projectTagsItemText}>Tensorflow</p></div>
+                      <div className={classes.projectTagsItem} style={{backgroundColor: "#007CBE"}}><p className={classes.projectTagsItemText}>Keras</p></div>
                     </div>
                     <Row>
-                      <ColorButton className={classes.itemButton}><a href="https://github.com/Abrahamcepedao/Netflix-react-clone" target="_blank" className={classes.itemLink}>Repo</a></ColorButton>
-                      <ColorButton className={classes.itemButton}><a href="https://netflix-react-clone-90718.web.app/" target="_blank" className={classes.itemLink}>Website</a></ColorButton>
+                      <ColorButton className={classes.itemButton}><a href="https://github.com/Abrahamcepedao/ITC/tree/master/Semestre2/analisis%20de%20biologia%20computacional/archivos%20r/actividad%205" target="_blank" className={classes.itemLink}>Repo</a></ColorButton>
                     </Row>
                   </div>
               </div>
             </div>
-            <div className={classes.projectItem} style={{backgroundImage: "url(./img/Home/Projects/project_management.png)"}}>
+            <div className={classes.projectItem} style={{backgroundImage: "url(./img/Home/Projects/beer.png)"}}>
               <div className={classes.projectOverlay}>
                   <div className={classes.projectInfo}>  
-                    <h3 className={classes.projectTitle}>Project manager</h3>
-                    <p className={classes.projectText}>Project description goes here ..Project description goes here ..Project description goes here ..</p>
+                    <h3 className={classes.projectTitle}>Beer tar 3D model</h3>
+                    <p className={classes.projectText}>A 3D model of a beer tar using polynomial and exponential functions, and used a printed it with a 3D printer.</p>
                     <div className={classes.projectTagsRow}>
-                      <div className={classes.projectTagsItem}><p className={classes.projectTagsItemText}>item</p></div>
-                      <div className={classes.projectTagsItem}><p className={classes.projectTagsItemText}>item</p></div>
-                      <div className={classes.projectTagsItem}><p className={classes.projectTagsItemText}>item</p></div>
-                      <div className={classes.projectTagsItem}><p className={classes.projectTagsItemText}>item</p></div>
+                      <div className={classes.projectTagsItem} style={{backgroundColor: "#C33C54"}}><p className={classes.projectTagsItemText}>MatLab</p></div>
+                      <div className={classes.projectTagsItem} style={{backgroundColor: "#E89005"}}><p className={classes.projectTagsItemText}>3D_printer</p></div>
                     </div>
                     <Row>
-                      <ColorButton className={classes.itemButton}><a href="https://github.com/Abrahamcepedao/project-management-reacp-app" target="_blank" className={classes.itemLink}>Repo</a></ColorButton>
-                      <ColorButton className={classes.itemButton}><a href="https://project-management-react-5d698.web.app/" target="_blank" className={classes.itemLink}>Website</a></ColorButton>
+                      <ColorButton className={classes.itemButton}><a href="https://github.com/Abrahamcepedao/ITC/tree/master/Semestre2/modelacion%20de%20la%20ingenieria%20con%20matematica%20computacional/proyecto" target="_blank" className={classes.itemLink}>Repo</a></ColorButton>
                     </Row>
                   </div>
               </div>
             </div>
-            <div className={classes.projectItem} style={{backgroundImage: "url(./img/Home/Projects/todo.png)"}}>
+            <div className={classes.projectItem} style={{backgroundImage: "url(./img/Home/Projects/streaming.png)"}}>
               <div className={classes.projectOverlay}>
                   <div className={classes.projectInfo}>  
-                    <h3 className={classes.projectTitle}>Todo list</h3>
-                    <p className={classes.projectText}>Project description goes here ..Project description goes here ..Project description goes here ..</p>
+                    <h3 className={classes.projectTitle}>Streaming simulator</h3>
+                    <p className={classes.projectText}>A streaming service console simulator that can fetch the movies and series or watch them and store their history.</p>
                     <div className={classes.projectTagsRow}>
-                      <div className={classes.projectTagsItem}><p className={classes.projectTagsItemText}>item</p></div>
-                      <div className={classes.projectTagsItem}><p className={classes.projectTagsItemText}>item</p></div>
-                      <div className={classes.projectTagsItem}><p className={classes.projectTagsItemText}>item</p></div>
-                      <div className={classes.projectTagsItem}><p className={classes.projectTagsItemText}>item</p></div>
+                      <div className={classes.projectTagsItem} style={{backgroundColor: "#C33C54"}}><p className={classes.projectTagsItemText}>C++</p></div>
+                      <div className={classes.projectTagsItem} style={{backgroundColor: "#E89005"}}><p className={classes.projectTagsItemText}>txt_files</p></div>
                     </div>
                     <Row>
-                      <ColorButton className={classes.itemButton}><a href="https://github.com/Abrahamcepedao/Netflix-react-clone" target="_blank" className={classes.itemLink}>Repo</a></ColorButton>
-                      <ColorButton className={classes.itemButton}><a href="https://netflix-react-clone-90718.web.app/" target="_blank" className={classes.itemLink}>Website</a></ColorButton>
+                      <ColorButton className={classes.itemButton}><a href="https://github.com/Abrahamcepedao/ITC/tree/master/Semestre2/programacion%20orientada%20a%20objetos/proyecto/A00827666_ProyectoIntegrador" target="_blank" className={classes.itemLink}>Repo</a></ColorButton>
                     </Row>
                   </div>
               </div>

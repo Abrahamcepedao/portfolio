@@ -45,11 +45,14 @@ const useStyles = makeStyles((theme) => ({
   },
   menuItemText: {
     textDecoration: 'none !important',
-    textDecorationLine: 'none',
     margin: '0px',
-    color: 'black',
+    color: "rgb(20,20,20)",
     [theme.breakpoints.down('576')]: {
       fontSize: '12px'
+    },
+    '&:hover': {
+      textDecoration: "none !important",
+      color: "rgb(20,20,20)",
     }
   }
 }));
