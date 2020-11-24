@@ -4,11 +4,11 @@ import { Button } from "@material-ui/core";
 import { grey } from "@material-ui/core/colors";
 import ArrowRightAltIcon from '@material-ui/icons/ArrowRightAlt';
 import { Row } from "react-bootstrap";
+import { useDataLayerValue } from './../../DataLayer';
 
 const useStyles = makeStyles((theme) => ({
   landingContainer: {
     width: "100vw",
-    backgroundImage: 'linear-gradient(180deg, rgb(247,247,255)0%, rgb(255,255,255)100%)',
     padding: "50px",
     [theme.breakpoints.down('576')]: {
       padding: "20px"
@@ -153,15 +153,16 @@ const ColorButton = withStyles((theme) => ({
 
 function Projects({ classes }) {
   classes = useStyles();
+  const [{dark}] = useDataLayerValue();
   return (
-    <div className={classes.landingContainer} id={"projects"}>
-      <div className={classes.infoContainer}>
-        <h1 className={classes.title}>Work & Projects</h1>
+    <div className={classes.landingContainer} id={"projects"} style={{backgroundColor: dark && "rgb(20,20,20)"}}>
+      <div className={classes.infoContainer} style={{backgroundColor: dark && "rgb(20,20,20)"}}>
+        <h1 className={classes.title} style={{color: dark && "rgb(247,255,255)"}}>Work & Projects</h1>
         <div className={classes.projectsContainer}>
-          <h2 className={classes.subtitle}>For fun projects</h2>
+          <h2 className={classes.subtitle} style={{color: dark && "rgb(247,255,255)"}}>For fun projects</h2>
           <div className={classes.projectRow}>
             <div className={classes.projectItem} style={{backgroundImage: "url(./img/Home/Projects/netflix.png)"}}>
-              <div className={classes.projectOverlay}>
+              <div className={classes.projectOverlay}  style={{backgroundImage: dark && 'linear-gradient(180deg, rgba(60,60,60,0.1)0%, rgb(60,60,60,1)60%)'}}>
                   <div className={classes.projectInfo}>  
                     <h3 className={classes.projectTitle}>Netflix clone</h3>
                     <p className={classes.projectText}>A Netflix clone imatiting its design and some of its functionality. Based on a tutorial with additional functions.</p>
@@ -179,7 +180,7 @@ function Projects({ classes }) {
               </div>
             </div>
             <div className={classes.projectItem} style={{backgroundImage: "url(./img/Home/Projects/spotify.png)"}}>
-              <div className={classes.projectOverlay}>
+              <div className={classes.projectOverlay}  style={{backgroundImage: dark && 'linear-gradient(180deg, rgba(60,60,60,0.1)0%, rgb(60,60,60,1)60%)'}}>
                   <div className={classes.projectInfo}>  
                     <h3 className={classes.projectTitle}>Spotify clone</h3>
                     <p className={classes.projectText}>A Spotify clone imatiting its design and some of its functionality. Based on a tutorial with additional functions.</p>
@@ -198,7 +199,7 @@ function Projects({ classes }) {
               </div>
             </div>
             <div className={classes.projectItem} style={{backgroundImage: "url(./img/Home/Projects/amazon.png)"}}>
-              <div className={classes.projectOverlay}>
+              <div className={classes.projectOverlay}  style={{backgroundImage: dark && 'linear-gradient(180deg, rgba(60,60,60,0.1)0%, rgb(60,60,60,1)60%)'}}>
                   <div className={classes.projectInfo}>  
                     <h3 className={classes.projectTitle}>Amazon clone</h3>
                     <p className={classes.projectText}>An Amazone clone imatiting its design and some of its functionality. Based on a tutorial with additional functions.</p>
@@ -216,7 +217,7 @@ function Projects({ classes }) {
               </div>
             </div>
             <div className={classes.projectItem} style={{backgroundImage: "url(./img/Home/Projects/hulu.png)"}}>
-              <div className={classes.projectOverlay}>
+              <div className={classes.projectOverlay}  style={{backgroundImage: dark && 'linear-gradient(180deg, rgba(60,60,60,0.1)0%, rgb(60,60,60,1)60%)'}}>
                   <div className={classes.projectInfo}>  
                     <h3 className={classes.projectTitle}>Hulu clone</h3>
                     <p className={classes.projectText}>A Hulu clone imatiting its design and some of its functionality. Based on a tutorial with additional functions.</p>
@@ -234,7 +235,7 @@ function Projects({ classes }) {
               </div>
             </div>
             <div className={classes.projectItem} style={{backgroundImage: "url(./img/Home/Projects/instagram.png)"}}>
-              <div className={classes.projectOverlay}>
+              <div className={classes.projectOverlay}  style={{backgroundImage: dark && 'linear-gradient(180deg, rgba(60,60,60,0.1)0%, rgb(60,60,60,1)60%)'}}>
                   <div className={classes.projectInfo}>  
                     <h3 className={classes.projectTitle}>Instagram clone</h3>
                     <p className={classes.projectText}>A Instagram clone imatiting its design and some of its functionality. Based on a tutorial with additional functions.</p>
@@ -252,7 +253,7 @@ function Projects({ classes }) {
               </div>
             </div>
             <div className={classes.projectItem} style={{backgroundImage: "url(./img/Home/Projects/evernote.png)"}}>
-              <div className={classes.projectOverlay}>
+              <div className={classes.projectOverlay}  style={{backgroundImage: dark && 'linear-gradient(180deg, rgba(60,60,60,0.1)0%, rgb(60,60,60,1)60%)'}}>
                   <div className={classes.projectInfo}>  
                     <h3 className={classes.projectTitle}>Evernote clone</h3>
                     <p className={classes.projectText}>A Evernote clone imatiting its design and some of its functionality. Based on a tutorial with additional functions.</p>
@@ -270,7 +271,7 @@ function Projects({ classes }) {
               </div>
             </div>
             <div className={classes.projectItem} style={{backgroundImage: "url(./img/Home/Projects/project_management.png)"}}>
-              <div className={classes.projectOverlay}>
+              <div className={classes.projectOverlay}  style={{backgroundImage: dark && 'linear-gradient(180deg, rgba(60,60,60,0.1)0%, rgb(60,60,60,1)60%)'}}>
                   <div className={classes.projectInfo}>  
                     <h3 className={classes.projectTitle}>Project manager</h3>
                     <p className={classes.projectText}>A project management web app to list the activities needed to be done for each project.</p>
@@ -288,7 +289,7 @@ function Projects({ classes }) {
               </div>
             </div>
             <div className={classes.projectItem} style={{backgroundImage: "url(./img/Home/Projects/todo.png)"}}>
-              <div className={classes.projectOverlay}>
+              <div className={classes.projectOverlay}  style={{backgroundImage: dark && 'linear-gradient(180deg, rgba(60,60,60,0.1)0%, rgb(60,60,60,1)60%)'}}>
                   <div className={classes.projectInfo}>  
                     <h3 className={classes.projectTitle}>Todo list</h3>
                     <p className={classes.projectText}>A todo list web app made with React and Firebase. I made it to learn the basics of React.</p>
@@ -306,7 +307,7 @@ function Projects({ classes }) {
               </div>
             </div>
             <div className={classes.projectItem} style={{backgroundImage: "url(./img/Home/Projects/tudu.png)"}}>
-              <div className={classes.projectOverlay}>
+              <div className={classes.projectOverlay}  style={{backgroundImage: dark && 'linear-gradient(180deg, rgba(60,60,60,0.1)0%, rgb(60,60,60,1)60%)'}}>
                   <div className={classes.projectInfo}>  
                     <h3 className={classes.projectTitle}>Tudu</h3>
                     <p className={classes.projectText}>I made a todo list iOS app, seeking to learn these skills and having a personalized todo list app.</p>
@@ -322,7 +323,7 @@ function Projects({ classes }) {
               </div>
             </div>
             <div className={classes.projectItem} style={{backgroundImage: "url(./img/Home/Projects/url_shortener.png)"}}>
-              <div className={classes.projectOverlay}>
+              <div className={classes.projectOverlay}  style={{backgroundImage: dark && 'linear-gradient(180deg, rgba(60,60,60,0.1)0%, rgb(60,60,60,1)60%)'}}>
                   <div className={classes.projectInfo}>  
                     <h3 className={classes.projectTitle}>Bulk url shortener</h3>
                     <p className={classes.projectText}>I made a bulk url shortener using python and the tiny url API. Its opensource so anyone can use it.</p>
@@ -337,13 +338,13 @@ function Projects({ classes }) {
               </div>
             </div>
           </div>
-          <p className={classes.scroll}>Scroll<ArrowRightAltIcon/></p>
+          <p className={classes.scroll}  style={{color: dark && "rgb(247,255,255)"}}>Scroll<ArrowRightAltIcon/></p>
         </div>
         <div className={classes.projectsContainer}>
-          <h2 className={classes.subtitle}>School projects</h2>
+          <h2 className={classes.subtitle} style={{color: dark && "rgb(247,255,255)"}}>School projects</h2>
           <div className={classes.projectRow}>
             <div className={classes.projectItem} style={{backgroundImage: "url(./img/Home/Projects/volcano.png)"}}>
-              <div className={classes.projectOverlay}>
+              <div className={classes.projectOverlay}  style={{backgroundImage: dark && 'linear-gradient(180deg, rgba(60,60,60,0.1)0%, rgb(60,60,60,1)60%)'}}>
                   <div className={classes.projectInfo}>  
                     <h3 className={classes.projectTitle}>Projectile simulator</h3>
                     <p className={classes.projectText}>A simulation of a projectile during a volcano eruption. This simulation can be altered with certain variables.</p>
@@ -358,7 +359,7 @@ function Projects({ classes }) {
               </div>
             </div>
             <div className={classes.projectItem} style={{backgroundImage: "url(./img/Home/Projects/airport.png)"}}>
-              <div className={classes.projectOverlay}>
+              <div className={classes.projectOverlay}  style={{backgroundImage: dark && 'linear-gradient(180deg, rgba(60,60,60,0.1)0%, rgb(60,60,60,1)60%)'}}>
                   <div className={classes.projectInfo}>  
                     <h3 className={classes.projectTitle}>Airport simulator</h3>
                     <p className={classes.projectText}>A console simulation of an aiport where one can fetch flights according to the date among other funtions.</p>
@@ -373,7 +374,7 @@ function Projects({ classes }) {
               </div>
             </div>
             <div className={classes.projectItem} style={{backgroundImage: "url(./img/Home/Projects/formula1.png)"}}>
-              <div className={classes.projectOverlay}>
+              <div className={classes.projectOverlay}  style={{backgroundImage: dark && 'linear-gradient(180deg, rgba(60,60,60,0.1)0%, rgb(60,60,60,1)60%)'}}>
                   <div className={classes.projectInfo}>  
                     <h3 className={classes.projectTitle}>Curve simulator</h3>
                     <p className={classes.projectText}>A simulator of a the curve of a formula 1 race track with the intent of finding the adecuate speed given the angle.</p>
@@ -388,7 +389,7 @@ function Projects({ classes }) {
               </div>
             </div>
             <div className={classes.projectItem} style={{backgroundImage: "url(./img/Home/Projects/electric.png)"}}>
-              <div className={classes.projectOverlay}>
+              <div className={classes.projectOverlay}  style={{backgroundImage: dark && 'linear-gradient(180deg, rgba(60,60,60,0.1)0%, rgb(60,60,60,1)60%)'}}>
                   <div className={classes.projectInfo}>  
                     <h3 className={classes.projectTitle}>Electric field</h3>
                     <p className={classes.projectText}>An electric field simulator that can be altered according to the value of several variables.</p>
@@ -403,7 +404,7 @@ function Projects({ classes }) {
               </div>
             </div>
             <div className={classes.projectItem} style={{backgroundImage: "url(./img/Home/Projects/magnetic.png)"}}>
-              <div className={classes.projectOverlay}>
+              <div className={classes.projectOverlay}  style={{backgroundImage: dark && 'linear-gradient(180deg, rgba(60,60,60,0.1)0%, rgb(60,60,60,1)60%)'}}>
                   <div className={classes.projectInfo}>  
                     <h3 className={classes.projectTitle}>Magnetic field</h3>
                     <p className={classes.projectText}>An electric field simulator that can be altered according to the value of several variables.</p>
@@ -418,7 +419,7 @@ function Projects({ classes }) {
               </div>
             </div>
             <div className={classes.projectItem} style={{backgroundImage: "url(./img/Home/Projects/genoma.png)"}}>
-              <div className={classes.projectOverlay}>
+              <div className={classes.projectOverlay}  style={{backgroundImage: dark && 'linear-gradient(180deg, rgba(60,60,60,0.1)0%, rgb(60,60,60,1)60%)'}}>
                   <div className={classes.projectInfo}>  
                     <h3 className={classes.projectTitle}>Lung cancer</h3>
                     <p className={classes.projectText}>An algorithm that analyzes certain genes to early detect the possibility of lung cancer in a certain gene.</p>
@@ -435,7 +436,7 @@ function Projects({ classes }) {
               </div>
             </div>
             <div className={classes.projectItem} style={{backgroundImage: "url(./img/Home/Projects/beer.png)"}}>
-              <div className={classes.projectOverlay}>
+              <div className={classes.projectOverlay}  style={{backgroundImage: dark && 'linear-gradient(180deg, rgba(60,60,60,0.1)0%, rgb(60,60,60,1)60%)'}}>
                   <div className={classes.projectInfo}>  
                     <h3 className={classes.projectTitle}>Beer tar 3D model</h3>
                     <p className={classes.projectText}>A 3D model of a beer tar using polynomial and exponential functions, and used a printed it with a 3D printer.</p>
@@ -450,7 +451,7 @@ function Projects({ classes }) {
               </div>
             </div>
             <div className={classes.projectItem} style={{backgroundImage: "url(./img/Home/Projects/streaming.png)"}}>
-              <div className={classes.projectOverlay}>
+              <div className={classes.projectOverlay}  style={{backgroundImage: dark && 'linear-gradient(180deg, rgba(60,60,60,0.1)0%, rgb(60,60,60,1)60%)'}}>
                   <div className={classes.projectInfo}>  
                     <h3 className={classes.projectTitle}>Streaming simulator</h3>
                     <p className={classes.projectText}>A streaming service console simulator that can fetch the movies and series or watch them and store their history.</p>
@@ -465,7 +466,7 @@ function Projects({ classes }) {
               </div>
             </div>
           </div>
-          <p className={classes.scroll}>Scroll<ArrowRightAltIcon/></p>
+          <p className={classes.scroll} style={{color: dark && "rgb(247,255,255)"}}>Scroll<ArrowRightAltIcon/></p>
         </div>
       </div>
     </div>

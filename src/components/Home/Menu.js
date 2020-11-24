@@ -53,6 +53,15 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor: "rgb(45,45,45)"
       }
   },
+  menuItemDark: {
+      cursor: "pointer",
+      color: 'black',
+      padding: "10px",
+      borderRadius: "5px",
+      '&:hover': {
+        backgroundColor: "rgb(227,235,235)"
+      }
+  },
   menuItemText: {
     textDecoration: 'none !important',
     margin: '0px',
@@ -80,7 +89,7 @@ function Menu({ classes }) {
           smooth
           className={classes.navLinks}
         >
-          <div className={classes.menuItem}>
+          <div className={dark ? classes.menuItemDark : classes.menuItem}>
             <HomeIcon style={{color: dark ? "rgb(20,20,20)" : "rgb(237,255,255)"}}/>
             <p className={classes.menuItemText} style={{color: dark && "rgb(20,20,20)"}}>Home</p>
           </div>
@@ -91,7 +100,7 @@ function Menu({ classes }) {
           smooth
           className={classes.navLinks}
         >
-          <div className={classes.menuItem}>
+          <div className={dark ? classes.menuItemDark : classes.menuItem}>
             <SchoolIcon style={{color: dark ? "rgb(20,20,20)" : "rgb(237,255,255)"}} />
             <p className={classes.menuItemText} style={{color: dark && "rgb(20,20,20)"}}>Education</p>
           </div>
@@ -102,7 +111,7 @@ function Menu({ classes }) {
           smooth
           className={classes.navLinks}
         >
-          <div className={classes.menuItem}>
+          <div className={dark ? classes.menuItemDark : classes.menuItem}>
             <DesktopMacIcon style={{color: dark ? "rgb(20,20,20)" : "rgb(237,255,255)"}} />
             <p className={classes.menuItemText} style={{color: dark && "rgb(20,20,20)"}}>Work & Projects</p>
           </div>
@@ -113,7 +122,7 @@ function Menu({ classes }) {
           smooth
           className={classes.navLinks}
         >
-          <div className={classes.menuItem}>
+          <div className={dark ? classes.menuItemDark : classes.menuItem}>
             <CodeIcon style={{color: dark ? "rgb(20,20,20)" : "rgb(237,255,255)"}} />
             <p className={classes.menuItemText} style={{color: dark && "rgb(20,20,20)"}}>Skills</p>
           </div>
@@ -124,7 +133,7 @@ function Menu({ classes }) {
           smooth
           className={classes.navLinks}
         >
-          <div className={classes.menuItem}>
+          <div className={dark ? classes.menuItemDark : classes.menuItem}>
             <ContactMailIcon style={{color: dark ? "rgb(20,20,20)" : "rgb(237,255,255)"}} />
             <p className={classes.menuItemText} style={{color: dark && "rgb(20,20,20)"}}>Contact</p>
           </div>
