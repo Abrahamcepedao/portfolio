@@ -12,12 +12,12 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import Grid from '@material-ui/core/Grid';
 import FolderIcon from '@material-ui/icons/Folder';
+import { useDataLayerValue } from './../../DataLayer';
 
 const useStyles = makeStyles((theme) => ({
   landingContainer: {
     width: "100vw",
     height: "100vh",
-    backgroundImage: 'linear-gradient(180deg, rgb(247,247,255)0%, rgb(255,255,255)100%)'
   },
   infoContainer: {
     width: "100%",
@@ -101,6 +101,29 @@ const ColorButton = withStyles((theme) => ({
   },
 }))(Button);
 
+const StyledButtonDark = withStyles((theme) => ({
+  root: {
+    color: "white",
+    backgroundColor: "black",
+    borderRadius: "100px",
+    transition: "transform 450ms",
+    fontWeight: "bolder",
+    padding: "10px 20px",
+    '&:hover': {
+      backgroundColor: "rgb(30,30,30)",
+      transform: "scale(1.08)",
+    },
+    '&:active': {
+      boxShadow: 'none',
+      backgroundColor: "rgb(30,30,30)",
+      border: 'none',
+    },
+    '&:focus': {
+      backgroundColor: "rgb(30,30,30)",
+    },
+  },
+}))(Button);
+
 const ColorButtonBlue = withStyles((theme) => ({
   root: {
     color: "#010400",
@@ -123,6 +146,8 @@ const ColorButtonBlue = withStyles((theme) => ({
 
 function EducationModal(props, {classes}) {
   classes = useStyles();
+  
+
   return (
     <Modal
       {...props}
@@ -328,38 +353,52 @@ function CoursesModal(props, {classes}) {
 
 function Education({ classes }) {
   classes = useStyles();
+  const [{dark}] = useDataLayerValue();
+
   const [highSchoolModalShow, setHighSchoolModalShow] = useState(false);
   const [coursesModalShow, setCoursesModalShow] = useState(false);
   const [bachelorModalShow, setBachelorModalShow] = useState(false);
   return (
-    <div className={classes.landingContainer} id={"education"}>
-      <div className={classes.infoContainer}>
-        <h1 className={classes.title}>Education</h1>
+    <div className={classes.landingContainer} id={"education"} style={{backgroundColor: dark && "rgb(20,20,20)"}}>
+      <div className={classes.infoContainer} style={{backgroundColor: dark && "rgb(20,20,20)"}}>
+        <h1 className={classes.title} style={{color: dark && "rgb(247,255,255)"}}>Education</h1>
         <Row>
           <Col sm={6}>
             <div className={classes.itemContainer} style={{backgroundImage: "url(./img/Home/Education/madison.jpg)"}}>
-              <div className={classes.itemOverlay}>
-                <p>High School</p>
-                <h3>Madison International School</h3>
-                <ColorButton className={classes.itemButton} onClick={() => setHighSchoolModalShow(true)}>More info</ColorButton>
+              <div className={classes.itemOverlay} style={{backgroundColor: dark && "rgba(247,255,255,0.75)"}}>
+                <p style={{color: dark && "rgb(20,20,20)"}}>High School</p>
+                <h3 style={{color: dark && "rgb(20,20,20)"}}>Madison International School</h3>
+                {dark ? (
+                  <StyledButtonDark className={classes.itemButton} onClick={() => setHighSchoolModalShow(true)}>More info</StyledButtonDark>
+                ) : (
+                  <ColorButton className={classes.itemButton} onClick={() => setHighSchoolModalShow(true)}>More info</ColorButton>
+                )}
               </div>
             </div>
           </Col>
           <Col sm={6}>
             <div className={classes.itemContainer} style={{backgroundImage: "url(./img/Home/Education/ai.jpg)"}}>
-              <div className={classes.itemOverlay}>
-                <p>Online and in-person</p>
-                <h3>Courses</h3>
-                <ColorButton className={classes.itemButton} onClick={() => setCoursesModalShow(true)}>More info</ColorButton>
+              <div className={classes.itemOverlay} style={{backgroundColor: dark && "rgba(247,255,255,0.75)"}}>
+                <p style={{color: dark && "rgb(20,20,20)"}}>Online and in-person</p>
+                <h3 style={{color: dark && "rgb(20,20,20)"}}>Courses</h3>
+                {dark ? (
+                  <StyledButtonDark className={classes.itemButton} onClick={() => setCoursesModalShow(true)}>More info</StyledButtonDark>
+                ) : (
+                  <ColorButton className={classes.itemButton} onClick={() => setCoursesModalShow(true)}>More info</ColorButton>
+                )}
               </div>
             </div>
           </Col>
           <Col>
             <div className={classes.itemContainer} style={{backgroundImage: "url(./img/Home/Education/ITESM.jpg)"}}>
-              <div className={classes.itemOverlay}>
-                <p>CS Bachelor</p>
-                <h3>Tecnológico de Monterrey</h3>
-                <ColorButton className={classes.itemButton} onClick={() => setBachelorModalShow(true)}>More info</ColorButton>
+              <div className={classes.itemOverlay} style={{backgroundColor: dark && "rgba(247,255,255,0.75)"}}>
+                <p style={{color: dark && "rgb(20,20,20)"}}>CS Bachelor</p>
+                <h3 style={{color: dark && "rgb(20,20,20)"}}>Tecnológico de Monterrey</h3>
+                {dark ? (
+                  <StyledButtonDark className={classes.itemButton} onClick={() => setBachelorModalShow(true)}>More info</StyledButtonDark>
+                ) : (
+                  <ColorButton className={classes.itemButton} onClick={() => setBachelorModalShow(true)}>More info</ColorButton>
+                )}
               </div>
             </div>
           </Col>
