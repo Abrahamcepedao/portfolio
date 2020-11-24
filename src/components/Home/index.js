@@ -1,7 +1,6 @@
 import React from 'react';
 import Landing from "./Landing";
 import Menu from "./Menu";
-import About from "./About";
 import Education from "./Education";
 import Projects from "./Projects";
 import Skills from "./Skills";
@@ -12,7 +11,6 @@ function index() {
         <>
            <Landing/>
            <Menu/>
-           {/* <About/> */}
            <Education/>
            <Projects/>
            <Skills/>

@@ -5,6 +5,7 @@ import { grey } from "@material-ui/core/colors";
 import ArrowRightAltIcon from '@material-ui/icons/ArrowRightAlt';
 import { Row } from "react-bootstrap";
 import { useDataLayerValue } from './../../DataLayer';
+import Work from "./Work"
 
 const useStyles = makeStyles((theme) => ({
   landingContainer: {
@@ -468,6 +469,7 @@ function Projects({ classes }) {
           </div>
           <p className={classes.scroll} style={{color: dark && "rgb(247,255,255)"}}>Scroll<ArrowRightAltIcon/></p>
         </div>
+        <Work/>
       </div>
     </div>
   );

@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
     bottom: "0px",
     width: "100vw",
     height: "100px",
-    zIndex: '1'
+    zIndex: '999'
   },
   menuContainer: {
     width: "90%",

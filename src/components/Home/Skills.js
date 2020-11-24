@@ -67,29 +67,8 @@ const useStyles = makeStyles((theme) => ({
 function Skills({ classes }) {
   classes = useStyles();
   return (
-    <div className={classes.landingContainer} id={"skills"}>
-      <div className={classes.topContainer}>
-        <img
-          src="./img/Home/Landing/logo.png"
-          alt="AC"
-          className={classes.logo}
-        />
-        <div className={classes.socialIcons}>
-          <InstagramIcon
-            style={{ margin: "10px", color: "#010400", fontSize: "25px" }}
-          />
-          <GitHubIcon
-            style={{ margin: "10px", color: "#010400", fontSize: "25px" }}
-          />
-          <LinkedInIcon
-            style={{ margin: "10px", color: "#010400", fontSize: "25px" }}
-          />
-        </div>
-        <button className={classes.darkButton}>Dark Mode</button>
-      </div>
-      <div className={classes.infoContainer}>
-        
-      </div>
+    <div id={"skills"}>
+      
     </div>
   );
 }
