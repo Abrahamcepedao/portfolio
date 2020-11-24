@@ -45,6 +45,13 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     alignItems: "center",
   },
+  iconLink: {
+    transition: "transform 450ms",
+    '&:hover': {
+      transform: "scale(1.1)",
+      transform: "translateY(-3px)"
+    }
+  },
   darkButton: {
     height: "30px",
     fontWeight: "bolder",
@@ -157,9 +164,15 @@ function Landing({classes}) {
               className={classes.logo}
             />
             <div className={classes.socialIcons}>
-              <InstagramIcon style={{ margin: "10px", color: (dark ? "white" : "#010400"), fontSize: "25px" }} />
-              <GitHubIcon style={{ margin: "10px", color: (dark ? "white" : "#010400"), fontSize: "25px" }} />
-              <LinkedInIcon style={{ margin: "10px", color: (dark ? "white" : "#010400"), fontSize: "25px" }} />
+              <a href="https://www.instagram.com/abrahamcepedao/" target="_blank" >
+                <InstagramIcon style={{ margin: "10px", color: (dark ? "white" : "#010400"), fontSize: "25px" }} className={classes.iconLink}/>
+              </a>
+              <a href="https://github.com/Abrahamcepedao" target="_blank" >
+                <GitHubIcon style={{ margin: "10px", color: (dark ? "white" : "#010400"), fontSize: "25px" }} className={classes.iconLink}/>
+              </a>
+              <a href="https://www.linkedin.com/in/abraham-cepeda-a001281b8/" target="_blank" >
+                <LinkedInIcon style={{ margin: "10px", color: (dark ? "white" : "#010400"), fontSize: "25px" }} className={classes.iconLink}/>
+              </a>
             </div>
             {dark ? (
               <StyledButtonDark
