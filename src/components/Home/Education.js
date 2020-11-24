@@ -18,6 +18,7 @@ const useStyles = makeStyles((theme) => ({
   landingContainer: {
     width: "100vw",
     height: "100vh",
+    backgroundImage: 'linear-gradient(180deg, rgba(247,247,255,1)10%, rgba(255,255,255,1)90%)',
   },
   infoContainer: {
     width: "100%",

@@ -11,6 +11,7 @@ const useStyles = makeStyles((theme) => ({
   landingContainer: {
     width: "100vw",
     padding: "50px",
+    backgroundImage: 'linear-gradient(180deg, rgba(247,247,255,1)10%, rgba(255,255,255,1)90%)',
     [theme.breakpoints.down('576')]: {
       padding: "20px"
     }
