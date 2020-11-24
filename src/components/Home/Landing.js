@@ -1,9 +1,10 @@
 import React from 'react';
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles, withStyles } from "@material-ui/core/styles";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import * as basicScroll from "basicscroll";
+import { Button } from "@material-ui/core";
+import { useDataLayerValue } from './../../DataLayer';
 
 const useStyles = makeStyles((theme) => ({
   landingBackground: {
@@ -45,7 +46,6 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
   },
   darkButton: {
-    width: "100px",
     height: "30px",
     fontWeight: "bolder",
     backgroundColor: "#010400",
@@ -88,11 +88,68 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+
+const StyledButtonLight = withStyles((theme) => ({
+  root: {
+    color: "white",
+    backgroundColor: "black",
+    borderRadius: "100px",
+    transition: "transform 450ms",
+    fontWeight: "bolder",
+    padding: "10px 20px",
+    '&:hover': {
+      backgroundColor: "rgb(30,30,30)",
+      transform: "scale(1.08)",
+    },
+    '&:active': {
+      boxShadow: 'none',
+      backgroundColor: "rgb(30,30,30)",
+      border: 'none',
+    },
+    '&:focus': {
+      backgroundColor: "rgb(30,30,30)",
+    },
+  },
+}))(Button);
+
+const StyledButtonDark = withStyles((theme) => ({
+  root: {
+    color: "#010400",
+    backgroundColor: "white",
+    borderRadius: "100px",
+    transition: "transform 450ms",
+    fontWeight: "bolder",
+    padding: "10px 20px",
+    '&:hover': {
+      backgroundColor: "rgb(237,237,245)",
+      transform: "scale(1.08)",
+    },
+    '&:active': {
+      boxShadow: 'none',
+      backgroundColor: "rgb(237,237,245)",
+      border: 'none',
+    },
+    '&:focus': {
+      backgroundColor: "rgb(237,237,245)",
+    },
+  },
+}))(Button);
+
 function Landing({classes}) {
     classes = useStyles();
+    const [{dark}, dispatch] = useDataLayerValue();
+
+    const setDark = () => {
+        dispatch({
+            type: "SET_DARK",
+            dark: !dark
+        });
+        console.log("dark",dark);
+    }
+
     return (
       <div className={classes.landingBackground} id={"home"}>
-        <div className={classes.landingContainer}>
+        <div className={classes.landingContainer} style={{backgroundImage: dark && 'linear-gradient(180deg, rgba(20,20,20,1)10%, rgba(255,255,255,0)50%, rgba(20,20,20,1)90%)'}}>
           <div className={classes.topContainer}>
             <img
               src="./img/Home/Landing/logo.png"
@@ -100,11 +157,24 @@ function Landing({classes}) {
               className={classes.logo}
             />
             <div className={classes.socialIcons}>
-              <InstagramIcon style={{ margin: "10px", color: "#010400", fontSize: "25px" }} />
-              <GitHubIcon style={{ margin: "10px", color: "#010400", fontSize: "25px" }} />
-              <LinkedInIcon style={{ margin: "10px", color: "#010400", fontSize: "25px" }} />
+              <InstagramIcon style={{ margin: "10px", color: (dark ? "white" : "#010400"), fontSize: "25px" }} />
+              <GitHubIcon style={{ margin: "10px", color: (dark ? "white" : "#010400"), fontSize: "25px" }} />
+              <LinkedInIcon style={{ margin: "10px", color: (dark ? "white" : "#010400"), fontSize: "25px" }} />
             </div>
-            <button className={classes.darkButton}>Dark Mode</button>
+            {dark ? (
+              <StyledButtonDark
+                className={classes.darkButton}
+                onClick={() => setDark()}>
+                  Light Mode
+              </StyledButtonDark>
+            ) : (
+              <StyledButtonLight
+                className={classes.darkButton}
+                onClick={() => setDark()}>
+                  Dark Mode
+              </StyledButtonLight>
+            )}
+            
           </div>
           <div className={classes.infoContainer}>
             <img
@@ -113,8 +183,8 @@ function Landing({classes}) {
               className={classes.avatar}
             />
             <div></div>
-            <h1 className={classes.title}>I am Abraham Cepeda</h1>
-            <h3 className={classes.text}>
+            <h1 className={classes.title} style={{color: dark && "white"}}>I am Abraham Cepeda</h1>
+            <h3 className={classes.text} style={{color: dark && "white"}}>
               I am a 20 year old computer programmer studying computer science at
               Tecnológico de Monterrey while developing my technological skills.
             </h3>

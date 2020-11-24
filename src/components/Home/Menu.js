@@ -6,6 +6,7 @@ import DesktopMacIcon from "@material-ui/icons/DesktopMac";
 import CodeIcon from "@material-ui/icons/Code";
 import ContactMailIcon from "@material-ui/icons/ContactMail";
 import { HashLink } from "react-router-hash-link";
+import { useDataLayerValue } from './../../DataLayer';
 
 const useStyles = makeStyles((theme) => ({
   menu: {
@@ -21,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
     height: "80%",
     maxWidth: "700px",
     margin: "auto",
-    backgroundColor: "rgb(247,247,255)",
+    backgroundColor: "rgb(20,20,20)",
     borderRadius: "40px",
     boxShadow: "0 5px 10px rgba(25, 25, 25, 0.15), 0 10px 10px rgba(25, 25, 25, 0.12)",
     display: "flex",
@@ -37,31 +38,42 @@ const useStyles = makeStyles((theme) => ({
     }
   },
   navLinks: {
-    textDecoration: 'none'
+    textDecoration: 'none',
+    '&:hover': {
+      textDecoration: "none !important",
+      color: "rgb(247,255,255)",
+    }
   },
   menuItem: {
       cursor: "pointer",
       color: 'black',
+      padding: "10px",
+      borderRadius: "5px",
+      '&:hover': {
+        backgroundColor: "rgb(45,45,45)"
+      }
   },
   menuItemText: {
     textDecoration: 'none !important',
     margin: '0px',
-    color: "rgb(20,20,20)",
+    color: "rgb(247,255,255)",
     [theme.breakpoints.down('576')]: {
       fontSize: '12px'
     },
     '&:hover': {
       textDecoration: "none !important",
-      color: "rgb(20,20,20)",
+      color: "rgb(247,255,255)",
     }
   }
 }));
 
 function Menu({ classes }) {
   classes = useStyles();
+  const [{dark}] = useDataLayerValue();
+
   return (
     <div className={classes.menu}>
-      <div className={classes.menuContainer}>
+      <div className={classes.menuContainer} style={{backgroundColor: dark && "rgb(247,255,255)"}}>
         <HashLink
           activeClass="active"
           to="/#home"
@@ -69,8 +81,8 @@ function Menu({ classes }) {
           className={classes.navLinks}
         >
           <div className={classes.menuItem}>
-            <HomeIcon />
-            <p className={classes.menuItemText}>Home</p>
+            <HomeIcon style={{color: dark ? "rgb(20,20,20)" : "rgb(237,255,255)"}}/>
+            <p className={classes.menuItemText} style={{color: dark && "rgb(20,20,20)"}}>Home</p>
           </div>
         </HashLink>
         <HashLink
@@ -80,8 +92,8 @@ function Menu({ classes }) {
           className={classes.navLinks}
         >
           <div className={classes.menuItem}>
-            <SchoolIcon />
-            <p className={classes.menuItemText}>Education</p>
+            <SchoolIcon style={{color: dark ? "rgb(20,20,20)" : "rgb(237,255,255)"}} />
+            <p className={classes.menuItemText} style={{color: dark && "rgb(20,20,20)"}}>Education</p>
           </div>
         </HashLink>
         <HashLink
@@ -91,8 +103,8 @@ function Menu({ classes }) {
           className={classes.navLinks}
         >
           <div className={classes.menuItem}>
-            <DesktopMacIcon />
-            <p className={classes.menuItemText}>Work & Projects</p>
+            <DesktopMacIcon style={{color: dark ? "rgb(20,20,20)" : "rgb(237,255,255)"}} />
+            <p className={classes.menuItemText} style={{color: dark && "rgb(20,20,20)"}}>Work & Projects</p>
           </div>
         </HashLink>
         <HashLink
@@ -102,8 +114,8 @@ function Menu({ classes }) {
           className={classes.navLinks}
         >
           <div className={classes.menuItem}>
-            <CodeIcon />
-            <p className={classes.menuItemText}>Skills</p>
+            <CodeIcon style={{color: dark ? "rgb(20,20,20)" : "rgb(237,255,255)"}} />
+            <p className={classes.menuItemText} style={{color: dark && "rgb(20,20,20)"}}>Skills</p>
           </div>
         </HashLink>
         <HashLink
@@ -113,8 +125,8 @@ function Menu({ classes }) {
           className={classes.navLinks}
         >
           <div className={classes.menuItem}>
-            <ContactMailIcon />
-            <p className={classes.menuItemText}>Contact</p>
+            <ContactMailIcon style={{color: dark ? "rgb(20,20,20)" : "rgb(237,255,255)"}} />
+            <p className={classes.menuItemText} style={{color: dark && "rgb(20,20,20)"}}>Contact</p>
           </div>
         </HashLink>
       </div>
