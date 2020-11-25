@@ -27,7 +27,7 @@ function Contact({ classes }) {
   const [{dark}] = useDataLayerValue();
 
   return (
-    <div className={classes.container} id={"skills"}>
+    <div className={classes.container} id={"skills"} style={{backgroundImage: dark && 'linear-gradient(180deg, rgba(20,20,20,1)10%, rgba(25,25,25,1)90%)'}}>
       <h1 className={classes.title} style={{color: dark && "rgb(247,255,255)"}}>Contact me</h1>
     </div>
   );

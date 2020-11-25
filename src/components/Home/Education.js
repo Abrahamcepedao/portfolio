@@ -364,8 +364,8 @@ function Education({ classes }) {
   const [coursesModalShow, setCoursesModalShow] = useState(false);
   const [bachelorModalShow, setBachelorModalShow] = useState(false);
   return (
-    <div className={classes.landingContainer} id={"education"} style={{backgroundColor: dark && "rgb(20,20,20)"}}>
-      <div className={classes.infoContainer} style={{backgroundColor: dark && "rgb(20,20,20)"}}>
+    <div className={classes.landingContainer} id={"education"} style={{backgroundImage: dark && 'linear-gradient(180deg, rgba(20,20,20,1)10%, rgba(25,25,25,1)90%)'}}>
+      <div className={classes.infoContainer}>
         <h1 className={classes.title} style={{color: dark && "rgb(247,255,255)"}}>Education</h1>
         <Row>
           <Col sm={6}>

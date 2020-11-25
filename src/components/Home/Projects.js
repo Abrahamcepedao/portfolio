@@ -33,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
   subtitle: {
     textAlign: "left",
     marginBottom: "-10px",
-    fontWeight: "bolder"
+    fontWeight: "bold"
   },
   projectRow: {
     display: "flex",
@@ -157,8 +157,8 @@ function Projects({ classes }) {
   classes = useStyles();
   const [{dark}] = useDataLayerValue();
   return (
-    <div className={classes.landingContainer} id={"projects"} style={{backgroundColor: dark && "rgb(20,20,20)"}}>
-      <div className={classes.infoContainer} style={{backgroundColor: dark && "rgb(20,20,20)"}}>
+    <div className={classes.landingContainer} id={"projects"} style={{backgroundImage: dark && 'linear-gradient(180deg, rgba(20,20,20,1)10%, rgba(25,25,25,1)90%)'}}>
+      <div className={classes.infoContainer} >
         <h1 className={classes.title} style={{color: dark && "rgb(247,255,255)"}}>Work & Projects</h1>
         <div className={classes.projectsContainer}>
           <h2 className={classes.subtitle} style={{color: dark && "rgb(247,255,255)"}}>For fun projects</h2>

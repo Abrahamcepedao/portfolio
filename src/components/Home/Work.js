@@ -8,7 +8,7 @@ const useStyles = makeStyles((theme) => ({
     subtitle: {
         textAlign: "left",
         marginBottom: "-10px",
-        fontWeight: "bolder"
+        fontWeight: "bold"
     },
     workContainer:{
         width: "100%",
@@ -233,7 +233,7 @@ function Work({ classes }) {
                 </div>
                 <div className={classes.workItemRight}>
                     <div className={classes.workItemContentRight}>
-                        <div className={classes.workItemCircle}></div>
+                        <div className={classes.workItemCircle} style={{backgroundColor: dark && "rgb(20,20,20)"}}></div>
                         <p className={classes.date} style={{color: dark && "rgb(247,255,255)"}}>Summer 2017</p>
                     </div>
                 </div>
@@ -271,7 +271,7 @@ function Work({ classes }) {
                     </div>
                     <div className={classes.workItemRight}>
                         <div className={classes.workItemContentRight}>
-                            <div className={classes.workItemCircle}></div>
+                            <div className={classes.workItemCircle} style={{backgroundColor: dark && "rgb(20,20,20)"}}></div>
                             <p className={classes.date} style={{color: dark && "rgb(247,255,255)"}}>2017 - Present</p>
                         </div>
                     </div>
@@ -281,7 +281,7 @@ function Work({ classes }) {
                     <div className={classes.workItemLeft2}>
                         <div className={classes.workItemContentLeft2}>
                             <p className={classes.date2}  style={{color: dark && "rgb(247,255,255)"}}>2017 - Present</p>
-                            <div className={classes.workItemCircle2}></div>
+                            <div className={classes.workItemCircle2} style={{backgroundColor: dark && "rgb(20,20,20)"}}></div>
                         </div>
                     </div>
                     <div className={classes.workItemRight2}>
@@ -347,7 +347,7 @@ function Work({ classes }) {
                 </div>
                 <div className={classes.workItemRight}>
                     <div className={classes.workItemContentRight}>
-                        <div className={classes.workItemCircle}></div>
+                        <div className={classes.workItemCircle} style={{backgroundColor: dark && "rgb(20,20,20)"}}></div>
                         <p className={classes.date} style={{color: dark && "rgb(247,255,255)"}}>Feb 2018 - Dic 2018</p>
                     </div>
                 </div>
@@ -385,7 +385,7 @@ function Work({ classes }) {
                     </div>
                     <div className={classes.workItemRight}>
                         <div className={classes.workItemContentRight}>
-                            <div className={classes.workItemCircle}></div>
+                            <div className={classes.workItemCircle} style={{backgroundColor: dark && "rgb(20,20,20)"}}></div>
                             <p className={classes.date} style={{color: dark && "rgb(247,255,255)"}}>Aug 2020 - Present</p>
                         </div>
                     </div>
@@ -395,7 +395,7 @@ function Work({ classes }) {
                     <div className={classes.workItemLeft2}>
                         <div className={classes.workItemContentLeft2}>
                             <p className={classes.date2}  style={{color: dark && "rgb(247,255,255)"}}>Aug 2020 - Present</p>
-                            <div className={classes.workItemCircle2}></div>
+                            <div className={classes.workItemCircle2} style={{backgroundColor: dark && "rgb(20,20,20)"}}></div>
                         </div>
                     </div>
                     <div className={classes.workItemRight2}>
