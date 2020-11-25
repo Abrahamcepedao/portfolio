@@ -11,7 +11,6 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import Grid from '@material-ui/core/Grid';
-import FolderIcon from '@material-ui/icons/Folder';
 import { useDataLayerValue } from './../../DataLayer';
 
 const useStyles = makeStyles((theme) => ({

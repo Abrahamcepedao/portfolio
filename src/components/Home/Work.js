@@ -1,7 +1,6 @@
 import React from "react";
 import { makeStyles, withStyles } from "@material-ui/core/styles";
 import { Button } from "@material-ui/core";
-import { grey } from "@material-ui/core/colors";
 import { useDataLayerValue } from './../../DataLayer';
 import { useMediaQuery } from 'react-responsive'
 
