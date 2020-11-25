@@ -43,8 +43,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     alignItems: "center",
     justifyContent: "space-between",
-    paddingTop: "20px",
-    paddingBottom: "20px",
+    padding: "5px 5px 30px 5px",
     overflowX: "scroll"
   },
   skillsItem: {
@@ -52,7 +51,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "rgb(247,255,255)",
     padding: "10px",
     borderRadius: "10px",
-    minWidth: "90px",
+    minWidth: "120px",
     marginRight: "20px",
     transition: "transform 450ms",
     '&:hover': {
@@ -72,85 +71,100 @@ function Skills({ classes }) {
     <div className={classes.container} id={"skills"} style={{backgroundImage: dark && 'linear-gradient(180deg, rgba(20,20,20,1)10%, rgba(25,25,25,1)90%)'}}>
       <h1 className={classes.title} style={{color: dark && "rgb(247,255,255)"}}>Skills</h1>
       <div className={classes.skillsContainer}>
-        <h3 className={classes.subtitle} style={{color: dark && "rgb(247,255,255)"}}>Web</h3>
+        <h3 className={classes.subtitle} style={{color: dark && "rgb(247,255,255)"}}>Web Development</h3>
         <div className={classes.skillsRow}>
           <div className={classes.skillsItem} style={{backgroundColor: dark && "rgb(20,20,20)"}}>
             <MDBIcon fab icon="html5" size="3x" style={{color: dark && "rgb(247,255,255)"}}/>
             <h5 className={classes.skillsItemText} style={{color: dark && "rgb(247,255,255)"}}>HTML 5</h5>
           </div>
           <div className={classes.skillsItem} style={{backgroundColor: dark && "rgb(20,20,20)"}}>
-            <MDBIcon fab icon="html5" size="3x" style={{color: dark && "rgb(247,255,255)"}}/>
-            <h5 className={classes.skillsItemText} style={{color: dark && "rgb(247,255,255)"}}>HTML 5</h5>
+            <MDBIcon fab icon="css3-alt cc_pointer" size="3x" style={{color: dark && "rgb(247,255,255)"}}/>
+            <h5 className={classes.skillsItemText} style={{color: dark && "rgb(247,255,255)"}}>CSS</h5>
           </div>
           <div className={classes.skillsItem} style={{backgroundColor: dark && "rgb(20,20,20)"}}>
-            <MDBIcon fab icon="html5" size="3x" style={{color: dark && "rgb(247,255,255)"}}/>
-            <h5 className={classes.skillsItemText} style={{color: dark && "rgb(247,255,255)"}}>HTML 5</h5>
+            <MDBIcon fab icon="js-square cc_pointer" size="3x" style={{color: dark && "rgb(247,255,255)"}}/>
+            <h5 className={classes.skillsItemText} style={{color: dark && "rgb(247,255,255)"}}>Javascript</h5>
           </div>
           <div className={classes.skillsItem} style={{backgroundColor: dark && "rgb(20,20,20)"}}>
-            <MDBIcon fab icon="html5" size="3x" style={{color: dark && "rgb(247,255,255)"}}/>
-            <h5 className={classes.skillsItemText} style={{color: dark && "rgb(247,255,255)"}}>HTML 5</h5>
+            <MDBIcon fab icon="react cc_pointer" size="3x" style={{color: dark && "rgb(247,255,255)"}}/>
+            <h5 className={classes.skillsItemText} style={{color: dark && "rgb(247,255,255)"}}>React</h5>
           </div>
           <div className={classes.skillsItem} style={{backgroundColor: dark && "rgb(20,20,20)"}}>
-            <MDBIcon fab icon="html5" size="3x" style={{color: dark && "rgb(247,255,255)"}}/>
-            <h5 className={classes.skillsItemText} style={{color: dark && "rgb(247,255,255)"}}>HTML 5</h5>
+            <MDBIcon icon="fire" size="3x" style={{color: dark && "rgb(247,255,255)"}}/>
+            <h5 className={classes.skillsItemText} style={{color: dark && "rgb(247,255,255)"}}>Firebase</h5>
           </div>
           <div className={classes.skillsItem} style={{backgroundColor: dark && "rgb(20,20,20)"}}>
-            <MDBIcon fab icon="html5" size="3x" style={{color: dark && "rgb(247,255,255)"}}/>
-            <h5 className={classes.skillsItemText} style={{color: dark && "rgb(247,255,255)"}}>HTML 5</h5>
+            <MDBIcon fab icon="wordpress cc_pointer" size="3x" style={{color: dark && "rgb(247,255,255)"}}/>
+            <h5 className={classes.skillsItemText} style={{color: dark && "rgb(247,255,255)"}}>Wordpress</h5>
           </div>
         </div>
-        <h3 className={classes.subtitle} style={{color: dark && "rgb(247,255,255)"}}>Web</h3>
+        <h3 className={classes.subtitle} style={{color: dark && "rgb(247,255,255)"}}>App Development</h3>
         <div className={classes.skillsRow}>
           <div className={classes.skillsItem} style={{backgroundColor: dark && "rgb(20,20,20)"}}>
-            <MDBIcon fab icon="html5" size="3x" style={{color: dark && "rgb(247,255,255)"}}/>
-            <h5 className={classes.skillsItemText} style={{color: dark && "rgb(247,255,255)"}}>HTML 5</h5>
+            <MDBIcon fab icon="swift cc_pointer" size="3x" style={{color: dark && "rgb(247,255,255)"}}/>
+            <h5 className={classes.skillsItemText} style={{color: dark && "rgb(247,255,255)"}}>Swift</h5>
           </div>
           <div className={classes.skillsItem} style={{backgroundColor: dark && "rgb(20,20,20)"}}>
-            <MDBIcon fab icon="html5" size="3x" style={{color: dark && "rgb(247,255,255)"}}/>
-            <h5 className={classes.skillsItemText} style={{color: dark && "rgb(247,255,255)"}}>HTML 5</h5>
+            <MDBIcon fab icon="apple cc_pointer" size="3x" style={{color: dark && "rgb(247,255,255)"}}/>
+            <h5 className={classes.skillsItemText} style={{color: dark && "rgb(247,255,255)"}}>Xcode</h5>
           </div>
           <div className={classes.skillsItem} style={{backgroundColor: dark && "rgb(20,20,20)"}}>
-            <MDBIcon fab icon="html5" size="3x" style={{color: dark && "rgb(247,255,255)"}}/>
-            <h5 className={classes.skillsItemText} style={{color: dark && "rgb(247,255,255)"}}>HTML 5</h5>
+            <MDBIcon icon="database cc_pointer" size="3x" style={{color: dark && "rgb(247,255,255)"}}/>
+            <h5 className={classes.skillsItemText} style={{color: dark && "rgb(247,255,255)"}}>Realm</h5>
           </div>
           <div className={classes.skillsItem} style={{backgroundColor: dark && "rgb(20,20,20)"}}>
-            <MDBIcon fab icon="html5" size="3x" style={{color: dark && "rgb(247,255,255)"}}/>
-            <h5 className={classes.skillsItemText} style={{color: dark && "rgb(247,255,255)"}}>HTML 5</h5>
+            <MDBIcon fab icon="python cc_pointer" size="3x" style={{color: dark && "rgb(247,255,255)"}}/>
+            <h5 className={classes.skillsItemText} style={{color: dark && "rgb(247,255,255)"}}>Python</h5>
           </div>
           <div className={classes.skillsItem} style={{backgroundColor: dark && "rgb(20,20,20)"}}>
-            <MDBIcon fab icon="html5" size="3x" style={{color: dark && "rgb(247,255,255)"}}/>
-            <h5 className={classes.skillsItemText} style={{color: dark && "rgb(247,255,255)"}}>HTML 5</h5>
+            <MDBIcon fab icon="java cc_pointer" size="3x" style={{color: dark && "rgb(247,255,255)"}}/>
+            <h5 className={classes.skillsItemText} style={{color: dark && "rgb(247,255,255)"}}>Java</h5>
           </div>
           <div className={classes.skillsItem} style={{backgroundColor: dark && "rgb(20,20,20)"}}>
-            <MDBIcon fab icon="html5" size="3x" style={{color: dark && "rgb(247,255,255)"}}/>
-            <h5 className={classes.skillsItemText} style={{color: dark && "rgb(247,255,255)"}}>HTML 5</h5>
+            <MDBIcon icon="code" size="3x" style={{color: dark && "rgb(247,255,255)"}}/>
+            <h5 className={classes.skillsItemText} style={{color: dark && "rgb(247,255,255)"}}>C++</h5>
           </div>
         </div>
-        <h3 className={classes.subtitle} style={{color: dark && "rgb(247,255,255)"}}>Web</h3>
+        <h3 className={classes.subtitle} style={{color: dark && "rgb(247,255,255)"}}>Backend Development</h3>
         <div className={classes.skillsRow}>
           <div className={classes.skillsItem} style={{backgroundColor: dark && "rgb(20,20,20)"}}>
-            <MDBIcon fab icon="html5" size="3x" style={{color: dark && "rgb(247,255,255)"}}/>
-            <h5 className={classes.skillsItemText} style={{color: dark && "rgb(247,255,255)"}}>HTML 5</h5>
+            <MDBIcon icon="wifi cc_pointer" size="3x" style={{color: dark && "rgb(247,255,255)"}}/>
+            <h5 className={classes.skillsItemText} style={{color: dark && "rgb(247,255,255)"}}>Heroku</h5>
           </div>
           <div className={classes.skillsItem} style={{backgroundColor: dark && "rgb(20,20,20)"}}>
-            <MDBIcon fab icon="html5" size="3x" style={{color: dark && "rgb(247,255,255)"}}/>
-            <h5 className={classes.skillsItemText} style={{color: dark && "rgb(247,255,255)"}}>HTML 5</h5>
+            <MDBIcon icon="database cc_pointer" size="3x" style={{color: dark && "rgb(247,255,255)"}}/>
+            <h5 className={classes.skillsItemText} style={{color: dark && "rgb(247,255,255)"}}>Realm</h5>
           </div>
           <div className={classes.skillsItem} style={{backgroundColor: dark && "rgb(20,20,20)"}}>
-            <MDBIcon fab icon="html5" size="3x" style={{color: dark && "rgb(247,255,255)"}}/>
-            <h5 className={classes.skillsItemText} style={{color: dark && "rgb(247,255,255)"}}>HTML 5</h5>
+            <MDBIcon icon="table" size="3x" style={{color: dark && "rgb(247,255,255)"}}/>
+            <h5 className={classes.skillsItemText} style={{color: dark && "rgb(247,255,255)"}}>MySql</h5>
           </div>
           <div className={classes.skillsItem} style={{backgroundColor: dark && "rgb(20,20,20)"}}>
-            <MDBIcon fab icon="html5" size="3x" style={{color: dark && "rgb(247,255,255)"}}/>
-            <h5 className={classes.skillsItemText} style={{color: dark && "rgb(247,255,255)"}}>HTML 5</h5>
+            <MDBIcon fab icon="php cc_pointer" size="3x" style={{color: dark && "rgb(247,255,255)"}}/>
+            <h5 className={classes.skillsItemText} style={{color: dark && "rgb(247,255,255)"}}>PHP</h5>
           </div>
           <div className={classes.skillsItem} style={{backgroundColor: dark && "rgb(20,20,20)"}}>
-            <MDBIcon fab icon="html5" size="3x" style={{color: dark && "rgb(247,255,255)"}}/>
-            <h5 className={classes.skillsItemText} style={{color: dark && "rgb(247,255,255)"}}>HTML 5</h5>
+            <MDBIcon icon="terminal cc_pointer" size="3x" style={{color: dark && "rgb(247,255,255)"}}/>
+            <h5 className={classes.skillsItemText} style={{color: dark && "rgb(247,255,255)"}}>Bash</h5>
+          </div>
+        </div>
+        <h3 className={classes.subtitle} style={{color: dark && "rgb(247,255,255)"}}>Other skills</h3>
+        <div className={classes.skillsRow}>
+          <div className={classes.skillsItem} style={{backgroundColor: dark && "rgb(20,20,20)"}}>
+            <MDBIcon icon="pen-nib cc_pointer" size="3x" style={{color: dark && "rgb(247,255,255)"}}/>
+            <h5 className={classes.skillsItemText} style={{color: dark && "rgb(247,255,255)"}}>Illustrator</h5>
           </div>
           <div className={classes.skillsItem} style={{backgroundColor: dark && "rgb(20,20,20)"}}>
-            <MDBIcon fab icon="html5" size="3x" style={{color: dark && "rgb(247,255,255)"}}/>
-            <h5 className={classes.skillsItemText} style={{color: dark && "rgb(247,255,255)"}}>HTML 5</h5>
+            <MDBIcon icon="pen-fancy cc_pointer" size="3x" style={{color: dark && "rgb(247,255,255)"}}/>
+            <h5 className={classes.skillsItemText} style={{color: dark && "rgb(247,255,255)"}}>Affinity designer</h5>
+          </div>
+          <div className={classes.skillsItem} style={{backgroundColor: dark && "rgb(20,20,20)"}}>
+            <MDBIcon fab icon="figma cc_pointer" size="3x" style={{color: dark && "rgb(247,255,255)"}}/>
+            <h5 className={classes.skillsItemText} style={{color: dark && "rgb(247,255,255)"}}>Figma</h5>
+          </div>
+          <div className={classes.skillsItem} style={{backgroundColor: dark && "rgb(20,20,20)"}}>
+            <MDBIcon far icon="chart-bar cc_pointer" size="3x" style={{color: dark && "rgb(247,255,255)"}}/>
+            <h5 className={classes.skillsItemText} style={{color: dark && "rgb(247,255,255)"}}>MatLab</h5>
           </div>
         </div>
       </div>
