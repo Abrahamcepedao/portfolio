@@ -16,16 +16,21 @@ import { useDataLayerValue } from './../../DataLayer';
 
 const useStyles = makeStyles((theme) => ({
   landingContainer: {
+    position: "relative",
     width: "100vw",
-    height: "100vh",
+    padding: "50px",
+    marginTop: "-70px",
     backgroundImage: 'linear-gradient(180deg, rgba(247,247,255,1)10%, rgba(255,255,255,1)90%)',
+    [theme.breakpoints.down('576')]: {
+      padding: "20px",
+      marginTop: "-100px",
+    }
   },
   infoContainer: {
     width: "100%",
     margin: "auto",
     textAlign: "center",
     color: "#010400",
-    padding: "50px"
   },
   title: {
     fontSize: "100px",
