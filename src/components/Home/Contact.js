@@ -2,7 +2,6 @@ import React from "react";
 import { makeStyles, withStyles } from "@material-ui/core/styles";
 import { useDataLayerValue } from './../../DataLayer';
 import { Button } from "@material-ui/core";
-import CopyMailTo from "react-copy-mailto";
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -12,7 +11,8 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
     backgroundImage: 'linear-gradient(180deg, rgba(247,247,255,1)10%, rgba(255,255,255,1)90%)',
     [theme.breakpoints.down('576')]: {
-      padding: "20px"
+      padding: "20px",
+      paddingBottom: "120px",
     }
   },
   title: {

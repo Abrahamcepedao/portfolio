@@ -156,6 +156,12 @@ const ColorButton = withStyles((theme) => ({
 function Projects({ classes }) {
   classes = useStyles();
   const [{dark}] = useDataLayerValue();
+
+  const openInNewTab = (url) => {
+    const newWindow = window.open(url, "_blank", "noopener,noreferrer");
+    if (newWindow) newWindow.opener = null;
+  };
+
   return (
     <div className={classes.landingContainer} id={"projects"} style={{backgroundImage: dark && 'linear-gradient(180deg, rgba(20,20,20,1)10%, rgba(25,25,25,1)90%)'}}>
       <div className={classes.infoContainer} >
@@ -175,8 +181,22 @@ function Projects({ classes }) {
                       <div className={classes.projectTagsItem} style={{backgroundColor: "#007CBE"}}><p className={classes.projectTagsItemText}>Material_UI</p></div>
                     </div>
                     <Row>
-                      <ColorButton className={classes.itemButton}><a href="https://github.com/Abrahamcepedao/Netflix-react-clone" target="_blank" className={classes.itemLink}>Repo</a></ColorButton>
-                      <ColorButton className={classes.itemButton}><a href="https://netflix-react-clone-90718.web.app/" target="_blank" className={classes.itemLink}>Website</a></ColorButton>
+                      <ColorButton className={classes.itemButton}
+                        onClick={() => {
+                            openInNewTab(
+                                "https://github.com/Abrahamcepedao/Netflix-react-clone"
+                            );
+                        }}>
+                        Repo
+                      </ColorButton>
+                      <ColorButton className={classes.itemButton}
+                        onClick={() => {
+                            openInNewTab(
+                                "https://netflix-react-clone-90718.web.app/"
+                            );
+                        }}>
+                        Website
+                      </ColorButton>
                     </Row>
                   </div>
               </div>
@@ -194,8 +214,22 @@ function Projects({ classes }) {
                       <div className={classes.projectTagsItem} style={{backgroundColor: "#007CBE"}}><p className={classes.projectTagsItemText}>Material_UI</p></div>
                     </div>
                     <Row>
-                      <ColorButton className={classes.itemButton}><a href="https://github.com/Abrahamcepedao/spotify-clone" target="_blank" className={classes.itemLink}>Repo</a></ColorButton>
-                      <ColorButton className={classes.itemButton}><a href="https://spotify-clone-app-36604.web.app/" target="_blank" className={classes.itemLink}>Website</a></ColorButton>
+                      <ColorButton className={classes.itemButton}
+                        onClick={() => {
+                            openInNewTab(
+                                "https://github.com/Abrahamcepedao/spotify-clone"
+                            );
+                        }}>
+                        Repo
+                      </ColorButton>
+                      <ColorButton className={classes.itemButton}
+                        onClick={() => {
+                            openInNewTab(
+                                "https://spotify-clone-app-36604.web.app/"
+                            );
+                        }}>
+                        Website
+                      </ColorButton>
                     </Row>
                   </div>
               </div>
@@ -212,8 +246,22 @@ function Projects({ classes }) {
                       <div className={classes.projectTagsItem} style={{backgroundColor: "#007CBE"}}><p className={classes.projectTagsItemText}>Material_UI</p></div>
                     </div>
                     <Row>
-                      <ColorButton className={classes.itemButton}><a href="https://github.com/Abrahamcepedao/Amazon-clone" target="_blank" className={classes.itemLink}>Repo</a></ColorButton>
-                      <ColorButton className={classes.itemButton}><a href="https://clone-89dfa.web.app/" target="_blank" className={classes.itemLink}>Website</a></ColorButton>
+                      <ColorButton className={classes.itemButton}
+                        onClick={() => {
+                            openInNewTab(
+                                "https://github.com/Abrahamcepedao/Amazon-clone"
+                            );
+                        }}>
+                        Repo
+                      </ColorButton>
+                      <ColorButton className={classes.itemButton}
+                        onClick={() => {
+                            openInNewTab(
+                                "https://clone-89dfa.web.app/"
+                            );
+                        }}>
+                        Website
+                      </ColorButton>
                     </Row>
                   </div>
               </div>
@@ -230,8 +278,22 @@ function Projects({ classes }) {
                       <div className={classes.projectTagsItem} style={{backgroundColor: "#007CBE"}}><p className={classes.projectTagsItemText}>Material_UI</p></div>
                     </div>
                     <Row>
-                      <ColorButton className={classes.itemButton}><a href="https://github.com/Abrahamcepedao/Hulu-clone" target="_blank" className={classes.itemLink}>Repo</a></ColorButton>
-                      <ColorButton className={classes.itemButton}><a href="https://hulu-react-clone-401b1.web.app/" target="_blank" className={classes.itemLink}>Website</a></ColorButton>
+                      <ColorButton className={classes.itemButton}
+                        onClick={() => {
+                            openInNewTab(
+                                "https://github.com/Abrahamcepedao/Hulu-clone"
+                            );
+                        }}>
+                        Repo
+                      </ColorButton>
+                      <ColorButton className={classes.itemButton}
+                        onClick={() => {
+                            openInNewTab(
+                                "https://hulu-react-clone-401b1.web.app/"
+                            );
+                        }}>
+                        Website
+                      </ColorButton>
                     </Row>
                   </div>
               </div>
@@ -248,8 +310,22 @@ function Projects({ classes }) {
                       <div className={classes.projectTagsItem} style={{backgroundColor: "#007CBE"}}><p className={classes.projectTagsItemText}>Material_UI</p></div>
                     </div>
                     <Row>
-                      <ColorButton className={classes.itemButton}><a href="https://github.com/Abrahamcepedao/instagram-clone-react" target="_blank" className={classes.itemLink}>Repo</a></ColorButton>
-                      <ColorButton className={classes.itemButton}><a href="https://instragam-clone-11576.web.app/" target="_blank" className={classes.itemLink}>Website</a></ColorButton>
+                      <ColorButton className={classes.itemButton}
+                        onClick={() => {
+                            openInNewTab(
+                                "https://github.com/Abrahamcepedao/instagram-clone-react"
+                            );
+                        }}>
+                        Repo
+                      </ColorButton>
+                      <ColorButton className={classes.itemButton}
+                        onClick={() => {
+                            openInNewTab(
+                                "https://instragam-clone-11576.web.app/"
+                            );
+                        }}>
+                        Website
+                      </ColorButton>
                     </Row>
                   </div>
               </div>
@@ -266,8 +342,22 @@ function Projects({ classes }) {
                       <div className={classes.projectTagsItem} style={{backgroundColor: "#007CBE"}}><p className={classes.projectTagsItemText}>Material_UI</p></div>
                     </div>
                     <Row>
-                      <ColorButton className={classes.itemButton}><a href="https://github.com/Abrahamcepedao/Netflix-react-clone" target="_blank" className={classes.itemLink}>Repo</a></ColorButton>
-                      <ColorButton className={classes.itemButton}><a href="https://netflix-react-clone-90718.web.app/" target="_blank" className={classes.itemLink}>Website</a></ColorButton>
+                      <ColorButton className={classes.itemButton}
+                        onClick={() => {
+                            openInNewTab(
+                                "https://github.com/Abrahamcepedao/instagram-clone-react"
+                            );
+                        }}>
+                        Repo
+                      </ColorButton>
+                      <ColorButton className={classes.itemButton}
+                        onClick={() => {
+                            openInNewTab(
+                                "https://instragam-clone-11576.web.app/"
+                            );
+                        }}>
+                        Website
+                      </ColorButton>
                     </Row>
                   </div>
               </div>
@@ -284,8 +374,22 @@ function Projects({ classes }) {
                       <div className={classes.projectTagsItem} style={{backgroundColor: "#007CBE"}}><p className={classes.projectTagsItemText}>Material_UI</p></div>
                     </div>
                     <Row>
-                      <ColorButton className={classes.itemButton}><a href="https://github.com/Abrahamcepedao/project-management-reacp-app" target="_blank" className={classes.itemLink}>Repo</a></ColorButton>
-                      <ColorButton className={classes.itemButton}><a href="https://project-management-react-5d698.web.app/" target="_blank" className={classes.itemLink}>Website</a></ColorButton>
+                      <ColorButton className={classes.itemButton}
+                        onClick={() => {
+                            openInNewTab(
+                                "https://github.com/Abrahamcepedao/project-management-reacp-app"
+                            );
+                        }}>
+                        Repo
+                      </ColorButton>
+                      <ColorButton className={classes.itemButton}
+                        onClick={() => {
+                            openInNewTab(
+                                "https://project-management-react-5d698.web.app/"
+                            );
+                        }}>
+                        Website
+                      </ColorButton>
                     </Row>
                   </div>
               </div>
@@ -302,8 +406,22 @@ function Projects({ classes }) {
                       <div className={classes.projectTagsItem} style={{backgroundColor: "#007CBE"}}><p className={classes.projectTagsItemText}>Material_UI</p></div>
                     </div>
                     <Row>
-                      <ColorButton className={classes.itemButton}><a href="https://github.com/Abrahamcepedao/Netflix-react-clone" target="_blank" className={classes.itemLink}>Repo</a></ColorButton>
-                      <ColorButton className={classes.itemButton}><a href="https://netflix-react-clone-90718.web.app/" target="_blank" className={classes.itemLink}>Website</a></ColorButton>
+                      <ColorButton className={classes.itemButton}
+                        onClick={() => {
+                            openInNewTab(
+                                "https://github.com/Abrahamcepedao/todo-react-app"
+                            );
+                        }}>
+                        Repo
+                      </ColorButton>
+                      <ColorButton className={classes.itemButton}
+                        onClick={() => {
+                            openInNewTab(
+                                "https://todo-react-app-3bd1b.web.app/"
+                            );
+                        }}>
+                        Website
+                      </ColorButton>
                     </Row>
                   </div>
               </div>
@@ -319,7 +437,14 @@ function Projects({ classes }) {
                       <div className={classes.projectTagsItem} style={{backgroundColor: "#EC7505"}}><p className={classes.projectTagsItemText}>Realm</p></div>
                     </div>
                     <Row>
-                      <ColorButton className={classes.itemButton}><a href="https://github.com/Abrahamcepedao/TuDu_App" target="_blank" className={classes.itemLink}>Repo</a></ColorButton>
+                      <ColorButton className={classes.itemButton}
+                        onClick={() => {
+                            openInNewTab(
+                                "https://github.com/Abrahamcepedao/TuDu_App"
+                            );
+                        }}>
+                        Repo
+                      </ColorButton>
                     </Row>
                   </div>
               </div>
@@ -334,7 +459,14 @@ function Projects({ classes }) {
                       <div className={classes.projectTagsItem} style={{backgroundColor: "#E89005"}}><p className={classes.projectTagsItemText}>TinyUrl_API</p></div>
                     </div>
                     <Row>
-                      <ColorButton className={classes.itemButton}><a href="https://github.com/Abrahamcepedao/TuDu_App" target="_blank" className={classes.itemLink}>Repo</a></ColorButton>
+                      <ColorButton className={classes.itemButton}
+                        onClick={() => {
+                            openInNewTab(
+                                "https://github.com/Abrahamcepedao/URL_Shortener"
+                            );
+                        }}>
+                        Repo
+                      </ColorButton>
                     </Row>
                   </div>
               </div>
@@ -355,7 +487,14 @@ function Projects({ classes }) {
                       <div className={classes.projectTagsItem} style={{backgroundColor: "#E89005"}}><p className={classes.projectTagsItemText}>MatLab_App</p></div>
                     </div>
                     <Row>
-                      <ColorButton className={classes.itemButton}><a href="https://github.com/Abrahamcepedao/ITC/tree/master/Semestre1/modelacion%20computacional%20del%20movimiento/MATLAB/proyecto%202" target="_blank" className={classes.itemLink}>Repo</a></ColorButton>
+                      <ColorButton className={classes.itemButton}
+                        onClick={() => {
+                            openInNewTab(
+                                "https://github.com/Abrahamcepedao/ITC/tree/master/Semestre1/modelacion%20computacional%20del%20movimiento/MATLAB/proyecto%202"
+                            );
+                        }}>
+                        Repo
+                      </ColorButton>
                     </Row>
                   </div>
               </div>
@@ -370,7 +509,14 @@ function Projects({ classes }) {
                       <div className={classes.projectTagsItem} style={{backgroundColor: "#E89005"}}><p className={classes.projectTagsItemText}>txt_files</p></div>
                     </div>
                     <Row>
-                      <ColorButton className={classes.itemButton}><a href="https://github.com/Abrahamcepedao/ITC/tree/master/Semestre1/c%2B%2B/A00827666_AbrahamCepedas" target="_blank" className={classes.itemLink}>Repo</a></ColorButton>
+                      <ColorButton className={classes.itemButton}
+                        onClick={() => {
+                            openInNewTab(
+                                "https://github.com/Abrahamcepedao/ITC/tree/master/Semestre1/c%2B%2B/A00827666_AbrahamCepedas"
+                            );
+                        }}>
+                        Repo
+                      </ColorButton>
                     </Row>
                   </div>
               </div>
@@ -385,7 +531,14 @@ function Projects({ classes }) {
                       <div className={classes.projectTagsItem} style={{backgroundColor: "#E89005"}}><p className={classes.projectTagsItemText}>MatLab_App</p></div>
                     </div>
                     <Row>
-                      <ColorButton className={classes.itemButton}><a href="https://github.com/Abrahamcepedao/ITC/tree/master/Semestre1/Modelacion%20computacional%20aplicando%20leyes%20de%20conservacion/archivos%20reto" target="_blank" className={classes.itemLink}>Repo</a></ColorButton>
+                      <ColorButton className={classes.itemButton}
+                        onClick={() => {
+                            openInNewTab(
+                                "https://github.com/Abrahamcepedao/ITC/tree/master/Semestre1/Modelacion%20computacional%20aplicando%20leyes%20de%20conservacion/archivos%20reto"
+                            );
+                        }}>
+                        Repo
+                      </ColorButton>
                     </Row>
                   </div>
               </div>
@@ -400,7 +553,14 @@ function Projects({ classes }) {
                       <div className={classes.projectTagsItem} style={{backgroundColor: "#E89005"}}><p className={classes.projectTagsItemText}>MatLab_App</p></div>
                     </div>
                     <Row>
-                      <ColorButton className={classes.itemButton}><a href="https://github.com/Abrahamcepedao/ITC/blob/master/Semestre2/Modelacion%20computacional%20de%20sistemas%20electricos/entregables/entregable_3.mlapp" target="_blank" className={classes.itemLink}>Repo</a></ColorButton>
+                      <ColorButton className={classes.itemButton}
+                        onClick={() => {
+                            openInNewTab(
+                                "https://github.com/Abrahamcepedao/ITC/blob/master/Semestre2/Modelacion%20computacional%20de%20sistemas%20electricos/entregables/entregable_3.mlapp"
+                            );
+                        }}>
+                        Repo
+                      </ColorButton>
                     </Row>
                   </div>
               </div>
@@ -415,7 +575,14 @@ function Projects({ classes }) {
                       <div className={classes.projectTagsItem} style={{backgroundColor: "#E89005"}}><p className={classes.projectTagsItemText}>MatLab_App</p></div>
                     </div>
                     <Row>
-                      <ColorButton className={classes.itemButton}><a href="https://github.com/Abrahamcepedao/ITC/blob/master/Semestre2/Modelacion%20computacional%20de%20sistemas%20electromagneticos/entregables/entregable3.mlapp" target="_blank" className={classes.itemLink}>Repo</a></ColorButton>
+                      <ColorButton className={classes.itemButton}
+                        onClick={() => {
+                            openInNewTab(
+                                "https://github.com/Abrahamcepedao/ITC/blob/master/Semestre2/Modelacion%20computacional%20de%20sistemas%20electromagneticos/entregables/entregable3.mlapp"
+                            );
+                        }}>
+                        Repo
+                      </ColorButton>
                     </Row>
                   </div>
               </div>
@@ -432,7 +599,14 @@ function Projects({ classes }) {
                       <div className={classes.projectTagsItem} style={{backgroundColor: "#007CBE"}}><p className={classes.projectTagsItemText}>Keras</p></div>
                     </div>
                     <Row>
-                      <ColorButton className={classes.itemButton}><a href="https://github.com/Abrahamcepedao/ITC/tree/master/Semestre2/analisis%20de%20biologia%20computacional/archivos%20r/actividad%205" target="_blank" className={classes.itemLink}>Repo</a></ColorButton>
+                      <ColorButton className={classes.itemButton}
+                        onClick={() => {
+                            openInNewTab(
+                                "https://github.com/Abrahamcepedao/ITC/tree/master/Semestre2/analisis%20de%20biologia%20computacional/archivos%20r/actividad%205"
+                            );
+                        }}>
+                        Repo
+                      </ColorButton>
                     </Row>
                   </div>
               </div>
@@ -447,7 +621,14 @@ function Projects({ classes }) {
                       <div className={classes.projectTagsItem} style={{backgroundColor: "#E89005"}}><p className={classes.projectTagsItemText}>3D_printer</p></div>
                     </div>
                     <Row>
-                      <ColorButton className={classes.itemButton}><a href="https://github.com/Abrahamcepedao/ITC/tree/master/Semestre2/modelacion%20de%20la%20ingenieria%20con%20matematica%20computacional/proyecto" target="_blank" className={classes.itemLink}>Repo</a></ColorButton>
+                      <ColorButton className={classes.itemButton}
+                        onClick={() => {
+                            openInNewTab(
+                                "https://github.com/Abrahamcepedao/ITC/tree/master/Semestre2/modelacion%20de%20la%20ingenieria%20con%20matematica%20computacional/proyecto"
+                            );
+                        }}>
+                        Repo
+                      </ColorButton>
                     </Row>
                   </div>
               </div>
@@ -462,7 +643,14 @@ function Projects({ classes }) {
                       <div className={classes.projectTagsItem} style={{backgroundColor: "#E89005"}}><p className={classes.projectTagsItemText}>txt_files</p></div>
                     </div>
                     <Row>
-                      <ColorButton className={classes.itemButton}><a href="https://github.com/Abrahamcepedao/ITC/tree/master/Semestre2/programacion%20orientada%20a%20objetos/proyecto/A00827666_ProyectoIntegrador" target="_blank" className={classes.itemLink}>Repo</a></ColorButton>
+                      <ColorButton className={classes.itemButton}
+                        onClick={() => {
+                            openInNewTab(
+                                "https://github.com/Abrahamcepedao/ITC/tree/master/Semestre2/programacion%20orientada%20a%20objetos/proyecto/A00827666_ProyectoIntegrador"
+                            );
+                        }}>
+                        Repo
+                      </ColorButton>
                     </Row>
                   </div>
               </div>

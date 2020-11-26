@@ -16,15 +16,14 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up('992')]: {
       backgroundAttachment: "fixed"
     }
-    //backgroundColor: "#EEEEFF",
-    //backgroundImage: "linear-gradient(to bottom, #EEEEFF, #617C8B)",
   },
   landingContainer: {
     width: "100%",
     height: "100%",
-    backgroundImage: 'linear-gradient(180deg, rgba(247,247,255,1)10%, rgba(255,255,255,0)50%, rgba(247,247,255,1)90%)'
-    //backgroundColor: "#EEEEFF",
-    //backgroundImage: "linear-gradient(to bottom, #EEEEFF, #617C8B)",
+    backgroundImage: 'linear-gradient(180deg, rgba(247,247,255,1)10%, rgba(255,255,255,0)50%, rgba(247,247,255,1)90%)',
+    [theme.breakpoints.down('576')]: {
+      backgroundImage: 'linear-gradient(180deg, rgba(247,247,255,1)10%, rgba(255,255,255,0.2)50%, rgba(247,247,255,1)70%)',
+    }
   },
   topContainer: {
     width: "90%",
@@ -38,6 +37,9 @@ const useStyles = makeStyles((theme) => ({
   logo: {
     width: "80px",
     objectFit: "contain",
+    [theme.breakpoints.down('576')]: {
+      width: "50px"
+    }
   },
   socialIcons: {
     flex: "1",
@@ -46,10 +48,10 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
   },
   iconLink: {
+    cursor: "pointer",
     transition: "transform 450ms",
     '&:hover': {
-      transform: "scale(1.1)",
-      transform: "translateY(-3px)"
+      transform: "scale(1.1) translateY(-3px)",
     }
   },
   darkButton: {
@@ -59,6 +61,12 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: "25px",
     color: "#EEEEFF",
     textAlign: "center",
+    [theme.breakpoints.down('576')]: {
+      fontSize: "12px",
+      width: "50px",
+      height: "50px",
+      borderRadius: "5px"
+    }
   },
   infoContainer: {
     width: "90%",
@@ -154,6 +162,11 @@ function Landing({classes}) {
         console.log("dark",dark);
     }
 
+    const openInNewTab = (url) => {
+      const newWindow = window.open(url, "_blank", "noopener,noreferrer");
+      if (newWindow) newWindow.opener = null;
+    };
+
     return (
       <div className={classes.landingBackground} id={"home"}>
         <div className={classes.landingContainer} style={{backgroundImage: dark && 'linear-gradient(180deg, rgba(20,20,20,1)10%, rgba(255,255,255,0)50%, rgba(20,20,20,1)90%)'}}>
@@ -164,15 +177,27 @@ function Landing({classes}) {
               className={classes.logo}
             />
             <div className={classes.socialIcons}>
-              <a href="https://www.instagram.com/abrahamcepedao/" target="_blank" >
-                <InstagramIcon style={{ margin: "10px", color: (dark ? "white" : "#010400"), fontSize: "25px" }} className={classes.iconLink}/>
-              </a>
-              <a href="https://github.com/Abrahamcepedao" target="_blank" >
-                <GitHubIcon style={{ margin: "10px", color: (dark ? "white" : "#010400"), fontSize: "25px" }} className={classes.iconLink}/>
-              </a>
-              <a href="https://www.linkedin.com/in/abraham-cepeda-a001281b8/" target="_blank" >
-                <LinkedInIcon style={{ margin: "10px", color: (dark ? "white" : "#010400"), fontSize: "25px" }} className={classes.iconLink}/>
-              </a>
+              <InstagramIcon style={{ margin: "10px", color: (dark ? "white" : "#010400"), fontSize: "25px" }} className={classes.iconLink}
+                onClick={() => {
+                    openInNewTab(
+                        "https://www.instagram.com/abrahamcepedao/"
+                    );
+                }}
+              />
+              <GitHubIcon style={{ margin: "10px", color: (dark ? "white" : "#010400"), fontSize: "25px" }} className={classes.iconLink}
+                onClick={() => {
+                    openInNewTab(
+                        "https://github.com/Abrahamcepedao"
+                    );
+                }}
+              />
+              <LinkedInIcon style={{ margin: "10px", color: (dark ? "white" : "#010400"), fontSize: "25px" }} className={classes.iconLink}
+                onClick={() => {
+                    openInNewTab(
+                        "https://www.linkedin.com/in/abraham-cepeda-a001281b8/"
+                    );
+                }}
+              />
             </div>
             {dark ? (
               <StyledButtonDark

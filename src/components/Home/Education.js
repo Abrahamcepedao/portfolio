@@ -84,6 +84,10 @@ const useStyles = makeStyles((theme) => ({
       color: "rgb(20,20,20)",
     }
   },
+  InfoIcon: {
+    color: lightBlue[700],
+    cursor: "pointer"
+  }
 }));
 
 const ColorButton = withStyles((theme) => ({
@@ -151,7 +155,10 @@ const ColorButtonBlue = withStyles((theme) => ({
 
 function EducationModal(props, {classes}) {
   classes = useStyles();
-  
+  const openInNewTab = (url) => {
+    const newWindow = window.open(url, "_blank", "noopener,noreferrer");
+    if (newWindow) newWindow.opener = null;
+  };
 
   return (
     <Modal
@@ -171,7 +178,14 @@ function EducationModal(props, {classes}) {
         </p>
         <p>During the last two years of high school, I studied a computer science class where we learned how to program in Java using the Eclipse IDE. Furthermore, we learned about network structure and components.</p>
         <div className={classes.modalButtonContainer}>
-          <ColorButtonBlue className={classes.itemButton}><a href="https://github.com/Abrahamcepedao/Computer-Science-IB-course" target="_blank" className={classes.itemLink}>REPO</a></ColorButtonBlue>
+          <ColorButtonBlue className={classes.itemButton}
+            onClick={() => {
+                openInNewTab(
+                    "https://github.com/Abrahamcepedao/Computer-Science-IB-course"
+                );
+            }}>
+            Repo
+          </ColorButtonBlue>
         </div>
       </Modal.Body>
     </Modal>
@@ -180,6 +194,12 @@ function EducationModal(props, {classes}) {
 
 function BachelorModal(props, {classes}) {
   classes = useStyles();
+  const openInNewTab = (url) => {
+    const newWindow = window.open(url, "_blank", "noopener,noreferrer");
+    if (newWindow) newWindow.opener = null;
+  };
+
+
   return (
     <Modal
       {...props}
@@ -287,7 +307,14 @@ function BachelorModal(props, {classes}) {
           </ListItem>
         </List>
         <div className={classes.modalButtonContainer}>
-          <ColorButtonBlue className={classes.itemButton}><a href="https://github.com/Abrahamcepedao/ITC" target="_blank" className={classes.itemLink}>REPO</a></ColorButtonBlue>
+          <ColorButtonBlue className={classes.itemButton}
+            onClick={() => {
+                openInNewTab(
+                    "https://github.com/Abrahamcepedao/ITC"
+                );
+            }}>
+            Repo
+          </ColorButtonBlue>
         </div>
       </Modal.Body>
     </Modal>
@@ -296,6 +323,11 @@ function BachelorModal(props, {classes}) {
 
 function CoursesModal(props, {classes}) {
   classes = useStyles();
+  const openInNewTab = (url) => {
+    const newWindow = window.open(url, "_blank", "noopener,noreferrer");
+    if (newWindow) newWindow.opener = null;
+  };
+
   return (
     <Modal
       {...props}
@@ -318,7 +350,14 @@ function CoursesModal(props, {classes}) {
                   secondary={"iOS App Development"}
                 />
                 <ListItemIcon>
-                  <a href="https://www.udemy.com/course/ios-13-app-development-bootcamp/" target="_blank"><InfoIcon /></a>
+                  <InfoIcon
+                    className={classes.InfoIcon}
+                    onClick={() => {
+                        openInNewTab(
+                            "https://www.udemy.com/course/ios-13-app-development-bootcamp/"
+                        );
+                    }}
+                  />
                 </ListItemIcon>
               </ListItem>
               <ListItem>
@@ -327,7 +366,14 @@ function CoursesModal(props, {classes}) {
                   secondary={"Web development"}
                 />
                 <ListItemIcon>
-                  <a href="https://www.udemy.com/course/diseno-web-desde-cero/" target="_blank"><InfoIcon /></a>
+                  <InfoIcon 
+                    className={classes.InfoIcon}
+                    onClick={() => {
+                        openInNewTab(
+                            "https://www.udemy.com/course/diseno-web-desde-cero/"
+                        );
+                    }}
+                  />
                 </ListItemIcon>
               </ListItem>
               <ListItem>
@@ -336,7 +382,14 @@ function CoursesModal(props, {classes}) {
                   secondary={"Graphic design"}
                 />
                 <ListItemIcon>
-                  <a href="https://www.udemy.com/course/illustrator-cc-para-novatos-desde-cero-hasta-experto/" target="_blank"><InfoIcon /></a>
+                  <InfoIcon 
+                    className={classes.InfoIcon}
+                    onClick={() => {
+                        openInNewTab(
+                            "https://www.udemy.com/course/illustrator-cc-para-novatos-desde-cero-hasta-experto/"
+                        );
+                    }}
+                  />
                 </ListItemIcon>
               </ListItem>
               <ListItem>
@@ -345,7 +398,14 @@ function CoursesModal(props, {classes}) {
                   secondary={"Artificial Inteligence"}
                 />
                 <ListItemIcon>
-                  <a href="https://www.dacodes.com/" target="_blank"><InfoIcon /></a>
+                  <InfoIcon 
+                    className={classes.InfoIcon}
+                    onClick={() => {
+                        openInNewTab(
+                            "https://www.dacodes.com/"
+                        );
+                    }}
+                  />
                 </ListItemIcon>
               </ListItem>
             </List>
@@ -363,6 +423,7 @@ function Education({ classes }) {
   const [highSchoolModalShow, setHighSchoolModalShow] = useState(false);
   const [coursesModalShow, setCoursesModalShow] = useState(false);
   const [bachelorModalShow, setBachelorModalShow] = useState(false);
+
   return (
     <div className={classes.landingContainer} id={"education"} style={{backgroundImage: dark && 'linear-gradient(180deg, rgba(20,20,20,1)10%, rgba(25,25,25,1)90%)'}}>
       <div className={classes.infoContainer}>

@@ -2,6 +2,7 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { useDataLayerValue } from './../../DataLayer';
 import { MDBIcon } from "mdbreact";
+import ArrowRightAltIcon from '@material-ui/icons/ArrowRightAlt';
 import '@fortawesome/fontawesome-free/css/all.min.css'; 
 import 'bootstrap-css-only/css/bootstrap.min.css'; 
 import 'mdbreact/dist/css/mdb.css';
@@ -60,6 +61,23 @@ const useStyles = makeStyles((theme) => ({
   },
   skillsItemText: {
     fontWeight: "bolder"
+  },
+  scroll: {
+    position: "relative",
+    top: "-20px",
+    right: "12px",
+    textAlign: "right",
+    cursor: "pointer",
+    fontWeight: "bolder",
+    [theme.breakpoints.up('1000px')]:{
+      visibility: "hidden",
+    },
+    '&:hover svg': {
+      transform: "translateX(15px)"
+    },
+    '& svg': {
+      transition: "transform 450ms",
+    }
   }
 }));
 
@@ -98,6 +116,7 @@ function Skills({ classes }) {
             <h5 className={classes.skillsItemText} style={{color: dark && "rgb(247,255,255)"}}>Wordpress</h5>
           </div>
         </div>
+        <p className={classes.scroll}  style={{color: dark && "rgb(247,255,255)"}}>Scroll<ArrowRightAltIcon/></p>
         <h3 className={classes.subtitle} style={{color: dark && "rgb(247,255,255)"}}>App Development</h3>
         <div className={classes.skillsRow}>
           <div className={classes.skillsItem} style={{backgroundColor: dark && "rgb(20,20,20)"}}>
@@ -125,6 +144,7 @@ function Skills({ classes }) {
             <h5 className={classes.skillsItemText} style={{color: dark && "rgb(247,255,255)"}}>C++</h5>
           </div>
         </div>
+        <p className={classes.scroll}  style={{color: dark && "rgb(247,255,255)"}}>Scroll<ArrowRightAltIcon/></p>
         <h3 className={classes.subtitle} style={{color: dark && "rgb(247,255,255)"}}>Backend Development</h3>
         <div className={classes.skillsRow}>
           <div className={classes.skillsItem} style={{backgroundColor: dark && "rgb(20,20,20)"}}>
@@ -148,6 +168,7 @@ function Skills({ classes }) {
             <h5 className={classes.skillsItemText} style={{color: dark && "rgb(247,255,255)"}}>Bash</h5>
           </div>
         </div>
+        <p className={classes.scroll}  style={{color: dark && "rgb(247,255,255)"}}>Scroll<ArrowRightAltIcon/></p>
         <h3 className={classes.subtitle} style={{color: dark && "rgb(247,255,255)"}}>Other skills</h3>
         <div className={classes.skillsRow}>
           <div className={classes.skillsItem} style={{backgroundColor: dark && "rgb(20,20,20)"}}>
@@ -167,6 +188,7 @@ function Skills({ classes }) {
             <h5 className={classes.skillsItemText} style={{color: dark && "rgb(247,255,255)"}}>MatLab</h5>
           </div>
         </div>
+        <p className={classes.scroll}  style={{color: dark && "rgb(247,255,255)"}}>Scroll<ArrowRightAltIcon/></p>
       </div>
     </div>
   );
