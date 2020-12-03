@@ -245,7 +245,7 @@ function Work({ classes }) {
                     <div className={classes.workItemLeft}>
                         <div className={classes.workItemContent}>
                             <h3 style={{color: dark && "rgb(247,255,255)"}}><strong>DFuture Web Development</strong></h3>
-                            <p style={{color: dark && "rgb(247,255,255)"}}>Did an intership at NearShore Technologies during the summer of 2017. I was required to work with excel worksheets and studied the principles of Quality Assurance.</p>
+                            <p style={{color: dark && "rgb(247,255,255)"}}>Founded DFuture with the purpose of improving my skills and building websites for companies. Therefore, my responsibilities include web development and having meetings with the clients.</p>
                             {dark ? (
                                 <StyledButtonDark
                                     className={classes.darkButton}
@@ -287,7 +287,7 @@ function Work({ classes }) {
                     <div className={classes.workItemRight2}>
                         <div className={classes.workItemContent2}>
                             <h3 style={{color: dark && "rgb(247,255,255)"}}><strong>DFuture Web Development</strong></h3>
-                            <p  style={{color: dark && "rgb(247,255,255)"}}>Did an intership at NearShore Technologies during the summer of 2017. I was required to work with excel worksheets and studied the principles of Quality Assurance.</p>
+                            <p  style={{color: dark && "rgb(247,255,255)"}}>Founded DFuture with the purpose of improving my skills and building websites for companies. Therefore, my responsibilities include web development and having meetings with the clients.</p>
                             {dark ? (
                                 <StyledButtonDark
                                     className={classes.darkButton}
@@ -321,7 +321,7 @@ function Work({ classes }) {
                 <div className={classes.workItemLeft}>
                     <div className={classes.workItemContent}>
                         <h3 style={{color: dark && "rgb(247,255,255)"}}><strong>Duud App - cofounder</strong></h3>
-                        <p style={{color: dark && "rgb(247,255,255)"}}>Did an intership at NearShore Technologies during the summer of 2017. I was required to work with excel worksheets and studied the principles of Quality Assurance.</p>
+                        <p style={{color: dark && "rgb(247,255,255)"}}>Cofounded Duud App, which is an app that allows users to send stickers through their keyboard while chatting on a social media platform. I developed the content, the website and managed the app development.</p>
                         {dark ? (
                             <StyledButtonDark
                                 className={classes.darkButton}
@@ -359,7 +359,7 @@ function Work({ classes }) {
                     <div className={classes.workItemLeft}>
                         <div className={classes.workItemContent}>
                             <h3 style={{color: dark && "rgb(247,255,255)"}}><strong>ITESM - On-campus job</strong></h3>
-                            <p style={{color: dark && "rgb(247,255,255)"}}>Did an intership at NearShore Technologies during the summer of 2017. I was required to work with excel worksheets and studied the principles of Quality Assurance.</p>
+                            <p style={{color: dark && "rgb(247,255,255)"}}>Did an on-campus job at ITESM where I had the opportunity to collaborate on several projects, including one of covid-19 live tracking and the population expansion of Monterrey. Additionally, I was in charge of creating scripts using R to analyze covid data and generate reports.</p>
                             {dark ? (
                                 <StyledButtonDark
                                     className={classes.darkButton}
@@ -401,13 +401,13 @@ function Work({ classes }) {
                     <div className={classes.workItemRight2}>
                         <div className={classes.workItemContent2}>
                             <h3 style={{color: dark && "rgb(247,255,255)"}}><strong>ITESM - On campus job</strong></h3>
-                            <p  style={{color: dark && "rgb(247,255,255)"}}>Did an intership at NearShore Technologies during the summer of 2017. I was required to work with excel worksheets and studied the principles of Quality Assurance.</p>
+                            <p  style={{color: dark && "rgb(247,255,255)"}}>Did an on-campus job at ITESM where I had the opportunity to collaborate on several projects, including one of covid-19 live tracking and the population expansion of Monterrey. Additionally, I was in charge of creating scripts using R to analyze covid data and generate reports.</p>
                             {dark ? (
                                 <StyledButtonDark
                                     className={classes.darkButton}
                                     onClick={() => {
                                         openInNewTab(
-                                            "https://tec.mx/es"
+                                            "https://tec.mx/en"
                                         );
                                     }}>
                                     More info
@@ -417,7 +417,7 @@ function Work({ classes }) {
                                     className={classes.darkButton}
                                     onClick={() => {
                                         openInNewTab(
-                                            "https://tec.mx/es"
+                                            "https://tec.mx/en"
                                         );
                                     }}>
                                     More info
