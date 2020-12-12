@@ -35,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
   },
   logo: {
-    width: "80px",
+    width: "130px",
     objectFit: "contain",
     [theme.breakpoints.down('576')]: {
       width: "50px"
@@ -61,6 +61,7 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: "25px",
     color: "#EEEEFF",
     textAlign: "center",
+    width: "130px",
     [theme.breakpoints.down('576')]: {
       fontSize: "12px",
       width: "50px",
