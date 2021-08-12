@@ -1,16 +1,20 @@
 import React from 'react';
+
+/* Material UI */
 import { makeStyles, withStyles } from "@material-ui/core/styles";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import { Button } from "@material-ui/core";
+
+/* DataLayer */
 import { useDataLayerValue } from './../../DataLayer';
 
 const useStyles = makeStyles((theme) => ({
   landingBackground: {
     width: "100vw",
     height: "100vh",
-    backgroundImage: 'url(./img/Home/Landing/background.png)',
+    backgroundImage: 'url(/portfolio/img/Home/Landing/background.png)',
     backgroundSize: "cover",
     backgroundPosition: "center",
     [theme.breakpoints.up('992')]: {
@@ -173,7 +177,7 @@ function Landing({classes}) {
         <div className={classes.landingContainer} style={{backgroundImage: dark && 'linear-gradient(180deg, rgba(20,20,20,1)10%, rgba(255,255,255,0)50%, rgba(20,20,20,1)90%)'}}>
           <div className={classes.topContainer}>
             <img
-              src="./img/Home/Landing/logo.png"
+              src="/portfolio/img/Home/Landing/logo.png"
               alt="AC"
               className={classes.logo}
             />
@@ -217,7 +221,7 @@ function Landing({classes}) {
           </div>
           <div className={classes.infoContainer}>
             <img
-              src="./img/Home/Landing/avatar.png"
+              src="/portfolio/img/Home/Landing/avatar.png"
               alt="AV"
               className={classes.avatar}
             />

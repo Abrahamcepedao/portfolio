@@ -306,6 +306,27 @@ function BachelorModal(props, {classes}) {
             />
           </ListItem>
         </List>
+        <h4>Fourth semester CS related classes</h4>
+        <List>
+          <ListItem>
+            <ListItemText
+              primary="Implementación de métodos computacionales"
+              secondary={"erlang • python • prolog"}
+            />
+          </ListItem>
+          <ListItem>
+            <ListItemText
+              primary="Interconexión de dispositivos"
+              secondary={"Cisco Packet Tracer"}
+            />
+          </ListItem>
+          <ListItem>
+            <ListItemText 
+              primary="Construcción de software y toma de decisiones"
+              secondary={"MySQL • React • Python • Flask • Unity"}
+            />
+          </ListItem>
+        </List>
         <div className={classes.modalButtonContainer}>
           <ColorButtonBlue className={classes.itemButton}
             onClick={() => {
@@ -430,7 +451,7 @@ function Education({ classes }) {
         <h1 className={classes.title} style={{color: dark && "rgb(247,255,255)"}}>Education</h1>
         <Row>
           <Col sm={6}>
-            <div className={classes.itemContainer} style={{backgroundImage: "url(./img/Home/Education/madison.jpg)"}}>
+            <div className={classes.itemContainer} style={{backgroundImage: "url(/portfolio/img/Home/Education/madison.jpg)"}}>
               <div className={classes.itemOverlay} style={{backgroundColor: dark && "rgba(247,255,255,0.75)"}}>
                 <p style={{color: dark && "rgb(20,20,20)"}}>High School</p>
                 <h3 style={{color: dark && "rgb(20,20,20)"}}>Madison International School</h3>
@@ -443,7 +464,7 @@ function Education({ classes }) {
             </div>
           </Col>
           <Col sm={6}>
-            <div className={classes.itemContainer} style={{backgroundImage: "url(./img/Home/Education/ai.jpg)"}}>
+            <div className={classes.itemContainer} style={{backgroundImage: "url(/portfolio/img/Home/Education/ai.jpg)"}}>
               <div className={classes.itemOverlay} style={{backgroundColor: dark && "rgba(247,255,255,0.75)"}}>
                 <p style={{color: dark && "rgb(20,20,20)"}}>Online and in-person</p>
                 <h3 style={{color: dark && "rgb(20,20,20)"}}>Courses</h3>
@@ -456,7 +477,7 @@ function Education({ classes }) {
             </div>
           </Col>
           <Col>
-            <div className={classes.itemContainer} style={{backgroundImage: "url(./img/Home/Education/ITESM.jpg)"}}>
+            <div className={classes.itemContainer} style={{backgroundImage: "url(/portfolio/img/Home/Education/ITESM.jpg)"}}>
               <div className={classes.itemOverlay} style={{backgroundColor: dark && "rgba(247,255,255,0.75)"}}>
                 <p style={{color: dark && "rgb(20,20,20)"}}>CS Bachelor</p>
                 <h3 style={{color: dark && "rgb(20,20,20)"}}>Tecnológico de Monterrey</h3>

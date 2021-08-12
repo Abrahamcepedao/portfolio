@@ -84,7 +84,6 @@ function Menu({ classes }) {
     <div className={classes.menu}>
       <div className={classes.menuContainer} style={{backgroundColor: dark && "rgb(247,255,255)"}}>
         <HashLink
-          activeClass="active"
           to="/#home"
           smooth
           className={classes.navLinks}
@@ -95,7 +94,6 @@ function Menu({ classes }) {
           </div>
         </HashLink>
         <HashLink
-          activeClass="active"
           to="/#education"
           smooth
           className={classes.navLinks}
@@ -106,7 +104,6 @@ function Menu({ classes }) {
           </div>
         </HashLink>
         <HashLink
-          activeClass="active"
           to="/#projects"
           smooth
           className={classes.navLinks}
@@ -117,7 +114,6 @@ function Menu({ classes }) {
           </div>
         </HashLink>
         <HashLink
-          activeClass="active"
           to="/#skills"
           smooth
           className={classes.navLinks}
@@ -128,7 +124,6 @@ function Menu({ classes }) {
           </div>
         </HashLink>
         <HashLink
-          activeClass="active"
           to="/#contact"
           smooth
           className={classes.navLinks}
