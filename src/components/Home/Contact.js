@@ -34,6 +34,7 @@ const StyledButtonLight = withStyles((theme) => ({
     fontWeight: "bolder",
     padding: "10px 20px",
     cursor: "pointer",
+    marginBottom: "20px",
     '&:hover': {
       backgroundColor: "rgb(30,30,30)",
       transform: "scale(1.08)",
@@ -58,6 +59,7 @@ const StyledButtonDark = withStyles((theme) => ({
     fontWeight: "bolder",
     padding: "10px 20px",
     cursor: "pointer",
+    marginBottom: "20px",
     '&:hover': {
       backgroundColor: "rgb(237,237,245)",
       transform: "scale(1.08)",
@@ -104,6 +106,28 @@ function Contact({ classes }) {
               );
           }}>
             Send mail
+        </StyledButtonLight>
+      )}
+      <br />
+      {dark ? (
+        <StyledButtonDark
+          className={classes.darkButton}
+          onClick={() => {
+              openInNewTab(
+                  "/portfolio/resume.pdf"
+              );
+          }}>
+            Resume
+        </StyledButtonDark>
+      ) : (
+        <StyledButtonLight
+          className={classes.darkButton}
+          onClick={() => {
+              openInNewTab(
+                  "/portfolio/resume.pdf"
+              );
+          }}>
+            Resume
         </StyledButtonLight>
       )}
     </div>

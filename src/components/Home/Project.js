@@ -147,7 +147,7 @@ function Project({ classes, project }) {
                             project.repo
                         );
                     }}>
-                    Repo
+                    Website
                     </ColorButton>
                 )}
                 {project.web !== "" && (

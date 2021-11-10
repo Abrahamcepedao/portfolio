@@ -207,7 +207,7 @@ function Projects({ classes }) {
       img: "url(/portfolio/img/Home/Projects/tudu.png)",
       tags: [{name: "React", color: "#C33C54"},{name: "Xcode", color: "#E89005"},{name: "Realm", color: "#EC7505"}],
       repo: "https://github.com/Abrahamcepedao/TuDu_App",
-      web: ""
+      web: "https://dfuture.tk/toodu/"
     },
     {
       title: "Bulk url shortener",
