@@ -140,21 +140,21 @@ function Project({ classes, project }) {
                 ))}
             </div>
             <Row>
-                {project.repo !== "" && (
-                    <ColorButton className={classes.itemButton}
-                    onClick={() => {
-                        openInNewTab(
-                            project.repo
-                        );
-                    }}>
-                    Website
-                    </ColorButton>
-                )}
                 {project.web !== "" && (
                     <ColorButton className={classes.itemButton}
                     onClick={() => {
                         openInNewTab(
                             project.web
+                        );
+                    }}>
+                    Website
+                    </ColorButton>
+                )}
+                {project.repo !== "" && (
+                    <ColorButton className={classes.itemButton}
+                    onClick={() => {
+                        openInNewTab(
+                            project.repo
                         );
                     }}>
                     Repo
