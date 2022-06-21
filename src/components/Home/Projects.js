@@ -221,9 +221,33 @@ function Projects({ classes }) {
 
   const schoolProjects = [
     {
+      title: "CEMEX web app",
+      description: "Developed and deployed a web using React, MongoDB and Falsk with machine learning clustering algorithms.",
+      img: "url(/portfolio/img/Home/Projects/cemex.png)",
+      tags: [{name: "React", color: "#C33C54"},{name: "Flask", color: "#E89005"},{name: "MongoDB", color: "#E89005"},{name: "AWS", color: "#E89005"}],
+      repo: "https://github.com/Abrahamcepedao/CemexWeb",
+      web: "http://cemexfix.tk/"
+    },
+    {
+      title: "iOS mobile app",
+      description: "Developed an iOS mobile app using Swift, Xcode, and Realm for the Marco Museum at Monterrey.",
+      img: "url(/portfolio/img/Home/Projects/marco.png)",
+      tags: [{name: "Swift", color: "#C33C54"},{name: "Xcode", color: "#E89005"},{name: "Realm", color: "#E89005"}],
+      repo: "https://github.com/Abrahamcepedao/MarcoFinal",
+      web: "https://dfuture.tk/marco/"
+    },
+    {
+      title: "Gamifyng web app",
+      description: "Developed a gamifying web app using React and SQL server connected to a unity game for Ternium.",
+      img: "url(/portfolio/img/Home/Projects/ternium.png)",
+      tags: [{name: "React", color: "#C33C54"},{name: "C#", color: "#E89005"},{name: "MySQL", color: "#E89005"}],
+      repo: "",
+      web: "https://dfuture.tk/ternium/"
+    },
+    {
       title: "Projectile simulator",
       description: "A simulation of a projectile during a volcano eruption. This simulation can be altered with certain variables.",
-      img: "url(/portfolio/img/Home/Projects/netflix.png)",
+      img: "url(/portfolio/img/Home/Projects/volcano.png)",
       tags: [{name: "MatLab", color: "#C33C54"},{name: "MatLab_App", color: "#E89005"}],
       repo: "https://github.com/Abrahamcepedao/ITC/tree/master/Semestre1/modelacion%20computacional%20del%20movimiento/MATLAB/proyecto%202",
       web: ""
