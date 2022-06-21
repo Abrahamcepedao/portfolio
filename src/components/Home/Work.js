@@ -245,7 +245,11 @@ function Work({ classes }) {
                     <div className={classes.workItemLeft}>
                         <div className={classes.workItemContent}>
                             <h3 style={{color: dark && "rgb(247,255,255)"}}><strong>DFuture Web Development</strong></h3>
-                            <p style={{color: dark && "rgb(247,255,255)"}}>Founded DFuture with the purpose of improving my skills and building websites for companies. Therefore, my responsibilities include web development and having meetings with the clients.</p>
+                            <ul>
+                                <li>Led the interaction with all the clients, which required several meetings to understand their needs.</li>
+                                <li>Led the development of numerous web applications using React or Next.js with either Firebase or MongoDB.</li>
+                                <li>Developed over eight complete projects ranging from e-commerce sites, blogs, landing pages, and web applications.</li>
+                            </ul>
                             {dark ? (
                                 <StyledButtonDark
                                     className={classes.darkButton}
@@ -287,7 +291,11 @@ function Work({ classes }) {
                     <div className={classes.workItemRight2}>
                         <div className={classes.workItemContent2}>
                             <h3 style={{color: dark && "rgb(247,255,255)"}}><strong>DFuture Web Development</strong></h3>
-                            <p  style={{color: dark && "rgb(247,255,255)"}}>Founded DFuture with the purpose of improving my skills and building websites for companies. Therefore, my responsibilities include web development and having meetings with the clients.</p>
+                            <ul>
+                                <li>Led the interaction with all the clients, which required several meetings to understand their needs.</li>
+                                <li>Led the development of numerous web applications using React or Next.js with either Firebase or MongoDB.</li>
+                                <li>Developed over eight complete projects ranging from e-commerce sites, blogs, landing pages, and web applications.</li>
+                            </ul>
                             {dark ? (
                                 <StyledButtonDark
                                     className={classes.darkButton}
@@ -359,7 +367,15 @@ function Work({ classes }) {
                     <div className={classes.workItemLeft}>
                         <div className={classes.workItemContent}>
                             <h3 style={{color: dark && "rgb(247,255,255)"}}><strong>ITESM - On-campus job</strong></h3>
-                            <p style={{color: dark && "rgb(247,255,255)"}}>Did an on-campus job at ITESM where I had the opportunity to collaborate on several projects, including one of covid-19 live tracking and the population expansion of Monterrey. Additionally, I was in charge of creating scripts using R to analyze covid data and generate reports.</p>
+                            <ul>
+                                <li>Built data analysis algorithms with R to generate reports regarding Covid19 for the university's executives.</li>
+                                <li>Led the development of a web application to visualize the results of the 2020 Mexico elections using React,
+                                    Mapbox, and AWS Buckets (https://www.mexicovid19.app/elecciones).</li>
+                                <li>Led the development of a progressive web application to visualize all Mexico's Covid19 related data in a
+                                    dashboard using React and Firebase (https://www.mexicovid19.app/covid-19).</li>
+                                <li>Created an administrative site to upload data to a specific web application, reducing 90% of the time
+                                    required.</li>
+                            </ul>
                             {dark ? (
                                 <StyledButtonDark
                                     className={classes.darkButton}
@@ -386,7 +402,7 @@ function Work({ classes }) {
                     <div className={classes.workItemRight}>
                         <div className={classes.workItemContentRight}>
                             <div className={classes.workItemCircle} style={{backgroundColor: dark && "rgb(20,20,20)"}}></div>
-                            <p className={classes.date} style={{color: dark && "rgb(247,255,255)"}}>Aug 2020 - Present</p>
+                            <p className={classes.date} style={{color: dark && "rgb(247,255,255)"}}>Aug 2020 - February 2022</p>
                         </div>
                     </div>
                 </div>
@@ -394,14 +410,22 @@ function Work({ classes }) {
                 <div className={classes.workItem}>
                     <div className={classes.workItemLeft2}>
                         <div className={classes.workItemContentLeft2}>
-                            <p className={classes.date2}  style={{color: dark && "rgb(247,255,255)"}}>Aug 2020 - Present</p>
+                            <p className={classes.date2}  style={{color: dark && "rgb(247,255,255)"}}>Aug 2020 - February 2022</p>
                             <div className={classes.workItemCircle2} style={{backgroundColor: dark && "rgb(20,20,20)"}}></div>
                         </div>
                     </div>
                     <div className={classes.workItemRight2}>
                         <div className={classes.workItemContent2}>
                             <h3 style={{color: dark && "rgb(247,255,255)"}}><strong>ITESM - On campus job</strong></h3>
-                            <p  style={{color: dark && "rgb(247,255,255)"}}>Did an on-campus job at ITESM where I had the opportunity to collaborate on several projects, including one of covid-19 live tracking and the population expansion of Monterrey. Additionally, I was in charge of creating scripts using R to analyze covid data and generate reports.</p>
+                            <ul>
+                                <li>Built data analysis algorithms with R to generate reports regarding Covid19 for the university's executives.</li>
+                                <li>Led the development of a web application to visualize the results of the 2020 Mexico elections using React,
+                                    Mapbox, and AWS Buckets (https://www.mexicovid19.app/elecciones).</li>
+                                <li>Led the development of a progressive web application to visualize all Mexico's Covid19 related data in a
+                                    dashboard using React and Firebase (https://www.mexicovid19.app/covid-19).</li>
+                                <li>Created an administrative site to upload data to a specific web application, reducing 90% of the time
+                                    required.</li>
+                            </ul>
                             {dark ? (
                                 <StyledButtonDark
                                     className={classes.darkButton}
