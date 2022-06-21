@@ -217,25 +217,25 @@ function BachelorModal(props, {classes}) {
         <List>
           <ListItem>
             <ListItemText
-              primary="Programación orientada a objetos I"
+              primary="Object oriented programming I"
               secondary={"C++"}
             />
           </ListItem>
           <ListItem>
             <ListItemText
-              primary="Modelación computacional aplicando leyes de conservación"
+              primary="Computational modelling aplying laws of conservation"
               secondary={"MatLab"}
             />
           </ListItem>
           <ListItem>
             <ListItemText
-              primary="Modelación computacional del movimiento"
+              primary="Computational modelling of movement"
               secondary={"MatLab"}
             />
           </ListItem>
           <ListItem>
             <ListItemText
-              primary="Pensamiento computacional"
+              primary="Computational thinking"
               secondary={"Python"}
             />
           </ListItem>
@@ -244,37 +244,37 @@ function BachelorModal(props, {classes}) {
         <List>
           <ListItem>
             <ListItemText
-              primary="Análisis de biología computacional"
+              primary="Computational biology analysis"
               secondary={"R"}
             />
           </ListItem>
           <ListItem>
             <ListItemText
-              primary="Experimentación física y pensamiento estadístico"
+              primary="Physics experimentation and statistical thinking"
               secondary={"MatLab"}
             />
           </ListItem>
           <ListItem>
             <ListItemText
-              primary="Modelación computacional de sistemas eléctricos"
+              primary="Computational modelling of electric systems"
               secondary={"MatLab"}
             />
           </ListItem>
           <ListItem>
             <ListItemText
-              primary="Modelación computacional de sistemas electromagnéticos"
+              primary="Computational modelling of electromagnetic systems"
               secondary={"MatLab"}
             />
           </ListItem>
           <ListItem>
             <ListItemText
-              primary="Modelación de la ingenería con matemática computacional"
+              primary="Engineering modelling with computational mathematics"
               secondary={"MatLab"}
             />
           </ListItem>
           <ListItem>
             <ListItemText
-              primary="Programación orientada a objetos II"
+              primary="Object oriented programming II"
               secondary={"C++"}
             />
           </ListItem>
@@ -283,26 +283,26 @@ function BachelorModal(props, {classes}) {
         <List>
           <ListItem>
             <ListItemText
-              primary="Programación de estructuras de datos y algoritmos fundamentales (C++)"
+              primary="Data structures and fundamental algorithms (C++)"
               secondary={"C++"}
             />
           </ListItem>
           <ListItem>
             <ListItemText
-              primary="Modelación de sistemas mínimos y arquitecturas computacionales"
+              primary="Modelling of minimum systems and computer architectures"
               secondary={"Marie.js"}
             />
           </ListItem>
           <ListItem>
             <ListItemText
-              primary="Implementación de Internet de las cosas"
-              secondary={"MySQL • React • Firebase"}
+              primary="Implementation of Internet of Things (IoT)"
+              secondary={"MySQL • React • Firebase • Python • Arduino"}
             />
           </ListItem>
           <ListItem>
             <ListItemText
-              primary="Análisis de requerimento de Software"
-              secondary={"Swift"}
+              primary="Software requirements analysis"
+              secondary={"Swift • Realm • Xcode"}
             />
           </ListItem>
         </List>
@@ -310,20 +310,62 @@ function BachelorModal(props, {classes}) {
         <List>
           <ListItem>
             <ListItemText
-              primary="Implementación de métodos computacionales"
-              secondary={"erlang • python • prolog"}
+              primary="Implementation of computational methods"
+              secondary={"Erlang • Python • Prolog"}
             />
           </ListItem>
           <ListItem>
             <ListItemText
-              primary="Interconexión de dispositivos"
+              primary="Devices interconnections"
               secondary={"Cisco Packet Tracer"}
             />
           </ListItem>
           <ListItem>
             <ListItemText 
-              primary="Construcción de software y toma de decisiones"
+              primary="Software development and decision making"
               secondary={"MySQL • React • Python • Flask • Unity"}
+            />
+          </ListItem>
+        </List>
+        <h4>Fifth semester CS related classes</h4>
+        <List>
+          <ListItem>
+            <ListItemText
+              primary="Integration of comùter security in networks and software systemms"
+              secondary={"Siwft • Networks • MySql • Xcode"}
+            />
+          </ListItem>
+          <ListItem>
+            <ListItemText
+              primary="Modelling of multiagent systems with computer graphics"
+              secondary={"C# • Unity • Python • Sockets" }
+            />
+          </ListItem>
+          <ListItem>
+            <ListItemText 
+              primary="Analysis of advanced algorithmms"
+              secondary={"Python"}
+            />
+          </ListItem>
+        </List>
+        <h4>Sixth semester CS related classes</h4>
+        <List>
+          <ListItem>
+            <ListItemText
+              primary="Software development planning"
+              secondary={"UML • Scrum • Analysis"}
+            />
+          </ListItem>
+          <ListItem>
+            <ListItemText
+              primary="Software development"
+              secondary={"Next.js • MongoDB • Python • Flask • Machine Learning • BERT • LDA" }
+            />
+          </ListItem>
+          <ListItem>
+            <ListItemText 
+              primary="Analysis of advanced algorithmms"
+              secondary={"Python"}
             />
           </ListItem>
         </List>
