@@ -112,6 +112,10 @@ function Skills({ classes }) {
             <h5 className={classes.skillsItemText} style={{color: dark && "rgb(247,255,255)"}}>Firebase</h5>
           </div>
           <div className={classes.skillsItem} style={{backgroundColor: dark && "rgb(20,20,20)"}}>
+            <MDBIcon fab icon="amazon" size="3x" style={{color: dark && "rgb(247,255,255)"}}/>
+            <h5 className={classes.skillsItemText} style={{color: dark && "rgb(247,255,255)"}}>Amazon</h5>
+          </div>
+          <div className={classes.skillsItem} style={{backgroundColor: dark && "rgb(20,20,20)"}}>
             <MDBIcon fab icon="wordpress cc_pointer" size="3x" style={{color: dark && "rgb(247,255,255)"}}/>
             <h5 className={classes.skillsItemText} style={{color: dark && "rgb(247,255,255)"}}>Wordpress</h5>
           </div>
@@ -154,6 +158,10 @@ function Skills({ classes }) {
           <div className={classes.skillsItem} style={{backgroundColor: dark && "rgb(20,20,20)"}}>
             <MDBIcon icon="database cc_pointer" size="3x" style={{color: dark && "rgb(247,255,255)"}}/>
             <h5 className={classes.skillsItemText} style={{color: dark && "rgb(247,255,255)"}}>Realm</h5>
+          </div>
+          <div className={classes.skillsItem} style={{backgroundColor: dark && "rgb(20,20,20)"}}>
+            <MDBIcon fab icon="node" size="3x" style={{color: dark && "rgb(247,255,255)"}}/>
+            <h5 className={classes.skillsItemText} style={{color: dark && "rgb(247,255,255)"}}>NodeJS</h5>
           </div>
           <div className={classes.skillsItem} style={{backgroundColor: dark && "rgb(20,20,20)"}}>
             <MDBIcon icon="table" size="3x" style={{color: dark && "rgb(247,255,255)"}}/>
