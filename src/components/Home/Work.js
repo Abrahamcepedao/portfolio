@@ -245,7 +245,7 @@ function Work({ classes }) {
                     <div className={classes.workItemLeft}>
                         <div className={classes.workItemContent}>
                             <h3 style={{color: dark && "rgb(247,255,255)"}}><strong>DFuture Web Development</strong></h3>
-                            <ul>
+                            <ul style={{color: dark && "rgb(247,255,255)"}}>
                                 <li>Led the interaction with all the clients, which required several meetings to understand their needs.</li>
                                 <li>Led the development of numerous web applications using React or Next.js with either Firebase or MongoDB.</li>
                                 <li>Developed over eight complete projects ranging from e-commerce sites, blogs, landing pages, and web applications.</li>
@@ -291,7 +291,7 @@ function Work({ classes }) {
                     <div className={classes.workItemRight2}>
                         <div className={classes.workItemContent2}>
                             <h3 style={{color: dark && "rgb(247,255,255)"}}><strong>DFuture Web Development</strong></h3>
-                            <ul>
+                            <ul style={{color: dark && "rgb(247,255,255)"}}>
                                 <li>Led the interaction with all the clients, which required several meetings to understand their needs.</li>
                                 <li>Led the development of numerous web applications using React or Next.js with either Firebase or MongoDB.</li>
                                 <li>Developed over eight complete projects ranging from e-commerce sites, blogs, landing pages, and web applications.</li>
@@ -367,7 +367,7 @@ function Work({ classes }) {
                     <div className={classes.workItemLeft}>
                         <div className={classes.workItemContent}>
                             <h3 style={{color: dark && "rgb(247,255,255)"}}><strong>ITESM - On-campus job</strong></h3>
-                            <ul>
+                            <ul style={{color: dark && "rgb(247,255,255)"}}>
                                 <li>Built data analysis algorithms with R to generate reports regarding Covid19 for the university's executives.</li>
                                 <li>Led the development of a web application to visualize the results of the 2020 Mexico elections using React,
                                     Mapbox, and AWS Buckets (https://www.mexicovid19.app/elecciones).</li>
@@ -417,7 +417,7 @@ function Work({ classes }) {
                     <div className={classes.workItemRight2}>
                         <div className={classes.workItemContent2}>
                             <h3 style={{color: dark && "rgb(247,255,255)"}}><strong>ITESM - On campus job</strong></h3>
-                            <ul>
+                            <ul style={{color: dark && "rgb(247,255,255)"}}>
                                 <li>Built data analysis algorithms with R to generate reports regarding Covid19 for the university's executives.</li>
                                 <li>Led the development of a web application to visualize the results of the 2020 Mexico elections using React,
                                     Mapbox, and AWS Buckets (https://www.mexicovid19.app/elecciones).</li>

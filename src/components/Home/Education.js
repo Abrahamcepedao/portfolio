@@ -479,6 +479,91 @@ function CoursesModal(props, {classes}) {
   );
 }
 
+function ExchangeModal(props, {classes}) {
+  classes = useStyles();
+  const openInNewTab = (url) => {
+    const newWindow = window.open(url, "_blank", "noopener,noreferrer");
+    if (newWindow) newWindow.opener = null;
+  };
+
+
+  return (
+    <Modal
+      {...props}
+      size="lg"
+      aria-labelledby="contained-modal-title-vcenter"
+      centered
+    >
+      <Modal.Header closeButton>
+        <Modal.Title id="contained-modal-title-vcenter">
+          Semester exchange at Boston University
+        </Modal.Title>
+      </Modal.Header>
+      <Modal.Body>
+        <h4>Semester exchange classes</h4>
+        <List>
+          <ListItem>
+            <ListItemText
+              primary="Foundations of Machine Learning"
+              secondary={"R • Statistics"}
+            />
+            <div className={classes.modalButtonContainer}>
+              <ColorButtonBlue className={classes.itemButton}
+                onClick={() => {
+                    openInNewTab(
+                        "https://github.com/Abrahamcepedao/BU-FML"
+                    );
+                }}>
+                Repo
+              </ColorButtonBlue>
+            </div>
+          </ListItem>
+          <ListItem>
+            <ListItemText
+              primary="Computational Mathematics for Data Analysis"
+              secondary={"Python • NumPy" }
+            />
+            <div className={classes.modalButtonContainer}>
+              <ColorButtonBlue className={classes.itemButton}
+                onClick={() => {
+                    openInNewTab(
+                        "https://github.com/Abrahamcepedao/BU-CMDA"
+                    );
+                }}>
+                Repo
+              </ColorButtonBlue>
+            </div>
+          </ListItem>
+          <ListItem>
+            <ListItemText
+              primary="Foundations of Analytics and Data Visualization"
+              secondary={"R • Statistics" }
+            />
+            <div className={classes.modalButtonContainer}>
+              <ColorButtonBlue className={classes.itemButton}
+                onClick={() => {
+                    openInNewTab(
+                        "https://github.com/Abrahamcepedao/BU-FADV"
+                    );
+                }}>
+                Repo
+              </ColorButtonBlue>
+            </div>
+          </ListItem>
+          <ListItem>
+            <ListItemText
+              primary="International Business Management"
+              secondary={"Case Studies"}
+            />
+          </ListItem>
+        </List>
+        
+        
+      </Modal.Body>
+    </Modal>
+  );
+}
+
 function Education({ classes }) {
   classes = useStyles();
   const [{dark}] = useDataLayerValue();
@@ -486,6 +571,7 @@ function Education({ classes }) {
   const [highSchoolModalShow, setHighSchoolModalShow] = useState(false);
   const [coursesModalShow, setCoursesModalShow] = useState(false);
   const [bachelorModalShow, setBachelorModalShow] = useState(false);
+  const [exchangeModalShow, setExchangeModalShow] = useState(false);
 
   return (
     <div className={classes.landingContainer} id={"education"} style={{backgroundImage: dark && 'linear-gradient(180deg, rgba(20,20,20,1)10%, rgba(25,25,25,1)90%)'}}>
@@ -518,7 +604,7 @@ function Education({ classes }) {
               </div>
             </div>
           </Col>
-          <Col>
+          <Col sm={6}>
             <div className={classes.itemContainer} style={{backgroundImage: "url(/portfolio/img/Home/Education/ITESM.jpg)"}}>
               <div className={classes.itemOverlay} style={{backgroundColor: dark && "rgba(247,255,255,0.75)"}}>
                 <p style={{color: dark && "rgb(20,20,20)"}}>CS Bachelor</p>
@@ -527,6 +613,19 @@ function Education({ classes }) {
                   <StyledButtonDark className={classes.itemButton} onClick={() => setBachelorModalShow(true)}>More info</StyledButtonDark>
                 ) : (
                   <ColorButton className={classes.itemButton} onClick={() => setBachelorModalShow(true)}>More info</ColorButton>
+                )}
+              </div>
+            </div>
+          </Col>
+          <Col sm={6}>
+            <div className={classes.itemContainer} style={{backgroundImage: "url(/portfolio/img/Home/Education/BU.jpg)"}}>
+              <div className={classes.itemOverlay} style={{backgroundColor: dark && "rgba(247,255,255,0.75)"}}>
+                <p style={{color: dark && "rgb(20,20,20)"}}>Semester exchange</p>
+                <h3 style={{color: dark && "rgb(20,20,20)"}}>Boston University</h3>
+                {dark ? (
+                  <StyledButtonDark className={classes.itemButton} onClick={() => setExchangeModalShow(true)}>More info</StyledButtonDark>
+                ) : (
+                  <ColorButton className={classes.itemButton} onClick={() => setExchangeModalShow(true)}>More info</ColorButton>
                 )}
               </div>
             </div>
@@ -544,6 +643,10 @@ function Education({ classes }) {
       <BachelorModal
         show={bachelorModalShow}
         onHide={() => setBachelorModalShow(false)}
+      />
+      <ExchangeModal
+        show={exchangeModalShow}
+        onHide={() => setExchangeModalShow(false)}
       />
     </div>
   );
