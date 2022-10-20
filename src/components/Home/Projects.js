@@ -226,7 +226,7 @@ function Projects({ classes }) {
       img: "url(/portfolio/img/Home/Projects/cemex.png)",
       tags: [{name: "React", color: "#C33C54"},{name: "Flask", color: "#E89005"},{name: "MongoDB", color: "#E89005"},{name: "AWS", color: "#E89005"}],
       repo: "https://github.com/Abrahamcepedao/CemexWeb",
-      web: "http://cemexfix.tk/"
+      web: "http://dfuture.com.mx/cemexfix"
     },
     {
       title: "iOS mobile app",
@@ -234,7 +234,7 @@ function Projects({ classes }) {
       img: "url(/portfolio/img/Home/Projects/marco.png)",
       tags: [{name: "Swift", color: "#C33C54"},{name: "Xcode", color: "#E89005"},{name: "Realm", color: "#E89005"}],
       repo: "https://github.com/Abrahamcepedao/MarcoFinal",
-      web: "https://dfuture.tk/marco/"
+      web: "http://dfuture.com.mx/marco"
     },
     {
       title: "Gamifyng web app",
@@ -242,7 +242,7 @@ function Projects({ classes }) {
       img: "url(/portfolio/img/Home/Projects/ternium.png)",
       tags: [{name: "React", color: "#C33C54"},{name: "C#", color: "#E89005"},{name: "MySQL", color: "#E89005"}],
       repo: "",
-      web: "https://dfuture.tk/ternium/"
+      web: "http://dfuture.com.mx/ternium"
     },
     {
       title: "Projectile simulator",

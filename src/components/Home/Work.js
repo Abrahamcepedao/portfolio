@@ -255,7 +255,7 @@ function Work({ classes }) {
                                     className={classes.darkButton}
                                     onClick={() => {
                                         openInNewTab(
-                                            "https://dfuture.tk/"
+                                            "http://dfuture.com.mx/"
                                         );
                                     }}>
                                     More info
@@ -265,7 +265,7 @@ function Work({ classes }) {
                                     className={classes.darkButton}
                                     onClick={() => {
                                         openInNewTab(
-                                            "https://dfuture.tk"
+                                            "http://dfuture.com.mx/"
                                         );
                                     }}>
                                     More info
@@ -301,7 +301,7 @@ function Work({ classes }) {
                                     className={classes.darkButton}
                                     onClick={() => {
                                         openInNewTab(
-                                            "https://dfuture.tk"
+                                            "http://dfuture.com.mx"
                                         );
                                     }}>
                                     More info
@@ -311,7 +311,7 @@ function Work({ classes }) {
                                     className={classes.darkButton}
                                     onClick={() => {
                                         openInNewTab(
-                                            "https://dfuture.tk"
+                                            "http://dfuture.com.mx"
                                         );
                                     }}>
                                     More info
@@ -335,7 +335,7 @@ function Work({ classes }) {
                                 className={classes.darkButton}
                                 onClick={() => {
                                     openInNewTab(
-                                        "https://dfuture.tk/duud/"
+                                        "http://dfuture.com.mx/duud"
                                     );
                                 }}>
                                 More info
@@ -345,7 +345,7 @@ function Work({ classes }) {
                                 className={classes.darkButton}
                                 onClick={() => {
                                     openInNewTab(
-                                        "https://dfuture.tk/duud/"
+                                        "http://dfuture.com.mx/duud"
                                     );
                                 }}>
                                 More info
@@ -381,7 +381,7 @@ function Work({ classes }) {
                                     className={classes.darkButton}
                                     onClick={() => {
                                         openInNewTab(
-                                            "https://tec.mx/es"
+                                            "https://tec.mx/en"
                                         );
                                     }}>
                                     More info
@@ -391,7 +391,7 @@ function Work({ classes }) {
                                     className={classes.darkButton}
                                     onClick={() => {
                                         openInNewTab(
-                                            "https://tec.mx/es"
+                                            "https://tec.mx/en"
                                         );
                                     }}>
                                     More info
