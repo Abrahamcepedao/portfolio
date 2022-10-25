@@ -36,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
   },
   projectTitle: {
     position: "relative",
-    top: ""
+    fontWeight: "bold",
   },
   projectText: {
     textAlign: "justify"
@@ -51,7 +51,6 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     flexDirection: "column",
     padding: "10px",
-    //backgroundImage: 'linear-gradient(180deg, rgb(247,247,255)0%, rgb(255,255,255)100%)',
   },
   projectTagsRow: {
     maxWidth: "280px",

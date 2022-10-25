@@ -581,8 +581,8 @@ function Education({ classes }) {
           <Col sm={6}>
             <div className={classes.itemContainer} style={{backgroundImage: "url(/portfolio/img/Home/Education/madison.jpg)"}}>
               <div className={classes.itemOverlay} style={{backgroundColor: dark && "rgba(247,255,255,0.75)"}}>
-                <p style={{color: dark && "rgb(20,20,20)"}}>High School</p>
-                <h3 style={{color: dark && "rgb(20,20,20)"}}>Madison International School</h3>
+                <p style={{color: dark && "rgb(20,20,20)", fontWeight: 'bold'}}>High School</p>
+                <h3 style={{color: dark && "rgb(20,20,20)", fontWeight: 'bold'}}>Madison International School</h3>
                 {dark ? (
                   <StyledButtonDark className={classes.itemButton} onClick={() => setHighSchoolModalShow(true)}>More info</StyledButtonDark>
                 ) : (
@@ -594,8 +594,8 @@ function Education({ classes }) {
           <Col sm={6}>
             <div className={classes.itemContainer} style={{backgroundImage: "url(/portfolio/img/Home/Education/ai.jpg)"}}>
               <div className={classes.itemOverlay} style={{backgroundColor: dark && "rgba(247,255,255,0.75)"}}>
-                <p style={{color: dark && "rgb(20,20,20)"}}>Online and in-person</p>
-                <h3 style={{color: dark && "rgb(20,20,20)"}}>Courses</h3>
+                <p style={{color: dark && "rgb(20,20,20)", fontWeight: 'bold'}}>Online and in-person</p>
+                <h3 style={{color: dark && "rgb(20,20,20)", fontWeight: 'bold'}}>Courses</h3>
                 {dark ? (
                   <StyledButtonDark className={classes.itemButton} onClick={() => setCoursesModalShow(true)}>More info</StyledButtonDark>
                 ) : (
@@ -607,8 +607,8 @@ function Education({ classes }) {
           <Col sm={6}>
             <div className={classes.itemContainer} style={{backgroundImage: "url(/portfolio/img/Home/Education/ITESM.jpg)"}}>
               <div className={classes.itemOverlay} style={{backgroundColor: dark && "rgba(247,255,255,0.75)"}}>
-                <p style={{color: dark && "rgb(20,20,20)"}}>CS Bachelor</p>
-                <h3 style={{color: dark && "rgb(20,20,20)"}}>Tecnológico de Monterrey</h3>
+                <p style={{color: dark && "rgb(20,20,20)", fontWeight: 'bold'}}>CS Bachelor</p>
+                <h3 style={{color: dark && "rgb(20,20,20)", fontWeight: 'bold'}}>Tecnológico de Monterrey</h3>
                 {dark ? (
                   <StyledButtonDark className={classes.itemButton} onClick={() => setBachelorModalShow(true)}>More info</StyledButtonDark>
                 ) : (
@@ -620,8 +620,8 @@ function Education({ classes }) {
           <Col sm={6}>
             <div className={classes.itemContainer} style={{backgroundImage: "url(/portfolio/img/Home/Education/BU.jpg)"}}>
               <div className={classes.itemOverlay} style={{backgroundColor: dark && "rgba(247,255,255,0.75)"}}>
-                <p style={{color: dark && "rgb(20,20,20)"}}>Semester exchange</p>
-                <h3 style={{color: dark && "rgb(20,20,20)"}}>Boston University</h3>
+                <p style={{color: dark && "rgb(20,20,20)", fontWeight: 'bold'}}>Semester exchange</p>
+                <h3 style={{color: dark && "rgb(20,20,20)", fontWeight: 'bold'}}>Boston University</h3>
                 {dark ? (
                   <StyledButtonDark className={classes.itemButton} onClick={() => setExchangeModalShow(true)}>More info</StyledButtonDark>
                 ) : (
