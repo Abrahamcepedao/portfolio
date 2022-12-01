@@ -228,7 +228,7 @@ function Landing({classes}) {
             <div></div>
             <h1 className={classes.title} style={{color: dark && "white"}}>I am Abraham Cepeda</h1>
             <h3 className={classes.text} style={{color: dark && "white"}}>
-              I am a 22 year old computer programmer studying computer science at
+              I am a 23 year old computer programmer studying computer science at
               Tecnológico de Monterrey while developing my technological skills.
             </h3>
           </div>
